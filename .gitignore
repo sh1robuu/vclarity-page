@@ -1,0 +1,8 @@
+dist/
+.playwright-cli/
+.taste-skill/inspect/
+node_modules/
+qa/screenshots/
+qa/export-check/
+qa/*.zip
+qa-*.png

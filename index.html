@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#FFFFFF">
+  <meta name="description" content="Vclarity 0.2.0 is a Chrome extension for exact DOM inspection, AI-assisted visual analysis, and capturing website interactions to generate frontend code.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Vclarity — See beyond the pixels.">
+  <meta property="og:description" content="Inspect real CSS, capture interactions, and turn visual ideas into code. Explore the Vclarity 0.2.0 developer preview.">
+  <meta property="og:image" content="./assets/social-preview.png">
+  <meta property="og:image:alt" content="Vclarity — See beyond the pixels, with the Live Inspect browser demo.">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>Vclarity 0.2.0 — See beyond the pixels.</title>
+  <link rel="icon" href="./assets/product/vclarity.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+  <svg class="icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+    <symbol id="i-cursor" viewBox="0 0 24 24"><path d="m5 3 14 10-7 1-3 7-4-18Z"/></symbol>
+    <symbol id="i-region" viewBox="0 0 24 24"><path d="M8 4H4v4m12-4h4v4M4 16v4h4m12-4v4h-4M8 4h8M4 8v8m16-8v8M8 20h8"/></symbol>
+    <symbol id="i-video" viewBox="0 0 24 24"><rect x="3" y="5" width="13" height="14" rx="3"/><path d="m16 10 5-3v10l-5-3Z"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="m9 5 11 7-11 7Z"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="13" rx="2"/><path d="M16 8V3H3v13h5"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5"/></symbol>
+    <symbol id="i-code" viewBox="0 0 24 24"><path d="m8 6-6 6 6 6m8-12 6 6-6 6m-3-14-2 20"/></symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24"><path d="m12 3 2.7 6.3L21 12l-6.3 2.7L12 21l-2.7-6.3L3 12l6.3-2.7ZM20 2v4m-2-2h4"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M6 18 18 6"/></symbol>
+    <symbol id="i-chrome" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3.5"/><path d="M12 8.5h8M9 13.8 5 6m8.5 9-4 6"/></symbol>
+    <symbol id="i-volume" viewBox="0 0 24 24"><path d="M11 5 6 9H3v6h3l5 4V5Zm5 4 6 6m-6 0 6-6"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+  </defs></svg>
+
+  <header class="site-header">
+    <nav class="nav wrap" aria-label="Main navigation">
+      <a class="brand" href="#" aria-label="Vclarity home"><img src="./assets/product/vclarity.svg" width="33" height="33" alt=""><span>vclarity<span class="brand-dot">.</span></span></a>
+      <div class="nav-links" id="navigation"><a href="#features">Features</a><a href="#how-it-works">How it works</a><a href="#faq">FAQ</a></div>
+      <button class="button button-small" data-open-preview>Get the preview <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></button>
+      <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="navigation"><span></span><span></span></button>
+    </nav>
+  </header>
+
+  <noscript><div class="no-script-note wrap">Explore the product below. For installation without JavaScript, <a href="./docs/preview-guide.html">open the developer preview guide</a>.</div></noscript>
+  <main id="main">
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <a class="release-link" href="#motion"><span>0.2.0</span> A new perspective. Now in motion. <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a>
+        <h1 id="hero-title">See beyond the pixels.</h1>
+        <p class="hero-description">Inspect real CSS, capture interactions, and turn visual ideas into code.</p>
+        <div class="hero-actions"><button class="button" data-open-preview><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-chrome"/></svg> Get the preview</button><a class="button button-secondary" href="#features" data-watch-demo><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-play"/></svg> Watch demo</a></div>
+        <p class="availability">A Chrome extension for curious builders. <span>Developer preview · v0.2.0</span></p>
+      </div>
+
+      <div class="hero-product" data-ui>
+        <div class="browser-top"><div class="traffic-lights"><i></i><i></i><i></i></div><div class="browser-address"><span class="lock-icon">⌑</span> layers.demo <span class="address-info">Illustrative demo</span></div><img src="./assets/product/vclarity.svg" width="20" height="20" alt="Vclarity extension"></div>
+        <div class="hero-browser-body">
+          <div class="sample-site">
+            <div class="sample-nav"><span class="layers-brand"><span class="layers-mark">▱</span> layers</span><div><span>Our approach</span><span>Journal</span><span class="sample-nav-contact">Let's talk ↗</span></div></div>
+            <div class="sample-site-content">
+              <p class="sample-eyebrow">A little space for your next big thing.</p>
+              <div class="sample-headline">Good ideas.<br>Room to grow.</div>
+              <p class="sample-description">Bring your thoughts, projects, and possibilities<br class="desktop-only"> together in one considered workspace.</p>
+              <div class="inspection-wrap"><span class="bounding-label">button.primary <span data-dimension>168 × 44</span></span><button class="sample-cta" data-inspect-target="button">Find your focus <span>↗</span></button><i class="handle tl"></i><i class="handle tr"></i><i class="handle bl"></i><i class="handle br"></i><span class="demo-cursor"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-cursor"/></svg></span></div>
+            </div>
+            <div class="sample-art" aria-hidden="true"><div class="art-circle"></div><div class="art-line l1"></div><div class="art-line l2"></div><div class="art-line l3"></div><div class="art-caption">A CLEARER<br>STATE OF MIND.</div><span class="art-index">L / 024</span></div>
+            <div class="sample-bottom"><span>Less noise. More possibility.</span><span>Made for the way you think.</span></div>
+          </div>
+          <aside class="extension-panel" aria-label="Live Inspect demo results">
+            <div class="panel-brand"><span>vclarity<span>.</span></span><span class="panel-version">0.2.0</span><span class="panel-dots">···</span></div>
+            <div class="panel-mode"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-cursor"/></svg><strong>Live Inspect</strong><div class="shortcut"><kbd>Alt</kbd><kbd>I</kbd></div></div>
+            <div class="selected-element"><span class="element-symbol">&lt;&gt;</span><div><strong data-element-name>button.primary</strong><span>Selected element</span></div><span class="exact-badge">Exact (DOM)</span></div>
+            <div class="panel-tabs"><span class="active">Design Specs</span><span>Product & UX</span></div>
+            <div class="property-group"><h2>Typography</h2><dl><div><dt>Font family</dt><dd data-property="fontFamily">Inter</dd></div><div><dt>Font size</dt><dd data-property="fontSize">14px</dd></div><div><dt>Font weight</dt><dd data-property="fontWeight">500</dd></div></dl></div>
+            <div class="property-group"><h2>Colors</h2><dl><div><dt>Text</dt><dd><i class="color-swatch white"></i><span data-property="color">#FFFFFF</span></dd></div><div><dt>Background</dt><dd><i class="color-swatch ink"></i><span data-property="backgroundColor">#263832</span></dd></div></dl></div>
+            <div class="property-group layout-group"><h2>Layout & spacing</h2><dl><div><dt>Dimensions</dt><dd data-property="dimensions">168 × 44</dd></div><div><dt>Padding</dt><dd data-property="padding">12px 20px</dd></div><div><dt>Border radius</dt><dd data-property="borderRadius">6px</dd></div></dl></div>
+            <button class="panel-copy" data-copy-css><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-copy"/></svg><span>Copy CSS</span></button>
+          </aside>
+        </div>
+      </div>
+      <div class="hero-product-caption"><span><span class="status-dot"></span> From “how did they build that?” to “now I get it.”</span><span>Inspect. Understand. Create.</span></div>
+    </section>
+
+    <section class="features wrap section-space" id="features" aria-labelledby="features-title">
+      <div class="section-heading"><h2 id="features-title">Your browser.<br>A different perspective.</h2><p>Get closer to the details, step back to see the structure,<br class="desktop-only"> or press record to understand the movement.</p></div>
+      <div class="feature-tabs" role="tablist" aria-label="Explore inspection modes">
+        <button id="tab-live" role="tab" aria-selected="true" aria-controls="feature-panel" data-mode="live"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-cursor"/></svg><span>Live Inspect<small>Details you can measure.</small></span><span class="shortcut"><kbd>Alt</kbd><kbd>I</kbd></span></button>
+        <button id="tab-ghost" role="tab" aria-selected="false" aria-controls="feature-panel" tabindex="-1" data-mode="ghost"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-region"/></svg><span>Ghost Inspect<small>The bigger picture, understood.</small></span><span class="shortcut"><kbd>Alt</kbd><kbd>S</kbd></span></button>
+        <button id="tab-video" role="tab" aria-selected="false" aria-controls="feature-panel" tabindex="-1" data-mode="video"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-video"/></svg><span>Video Capture<small>See how an interface behaves.</small></span><span class="new-label">New in 0.2.0</span></button>
+      </div>
+      <div id="feature-panel" class="feature-stage" role="tabpanel" tabindex="0" aria-labelledby="tab-live" data-ui>
+        <div class="feature-story"><span class="mode-label" id="feature-label">Precision, without the guesswork.</span><h3 id="feature-title">The real CSS.<br>Right in front of you.</h3><p id="feature-description">Hover, select, understand. Read typography, colors, dimensions, and spacing directly from the page’s DOM.</p><div class="feature-proof" id="feature-proof"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg> Exact (DOM) measurements</div><p class="interaction-hint" id="feature-hint">Try it. Select an element in the demo.</p></div>
+        <div class="feature-visual">
+          <div class="mini-browser-top"><span class="mini-lights">● ● ●</span><span>workspace.demo</span><span>Illustrative demo</span></div>
+          <div class="inspect-canvas" id="inspect-canvas">
+            <div class="demo-workspace"><div class="workspace-top"><span class="workspace-logo">▧ &nbsp;Workspace</span><span>+ &nbsp; New project</span></div><div class="workspace-content"><span class="workspace-greeting">A fresh perspective</span><button class="workspace-heading" data-inspect-target="heading">Make space for good ideas.</button><div class="workspace-projects"><button class="workspace-project project-green" data-inspect-target="card"><span>Brand exploration</span><strong>A new<br>point of view.</strong><span>Design direction &nbsp; ↗</span></button><button class="workspace-project project-cream" data-inspect-target="card"><span>Website refresh</span><strong>Less,<br>but better.</strong><span>In progress &nbsp; ↗</span></button></div><div class="workspace-task"><span><i></i> Refine the little details</span><span>Today</span></div></div></div>
+            <div class="demo-selection" aria-hidden="true"><span class="selection-tag">h2.heading <span>352 × 42</span></span><i class="handle tl"></i><i class="handle tr"></i><i class="handle bl"></i><i class="handle br"></i></div>
+            <div class="feature-result"><div class="result-heading"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-cursor"/></svg><strong id="result-title">h2.heading</strong><span id="result-badge" class="exact-badge">Exact (DOM)</span></div><div id="result-body"><div class="result-properties"><span>Font size <b>28px</b></span><span>Font weight <b>600</b></span><span>Color <b>#263832</b></span></div></div></div>
+          </div>
+          <div class="feature-demo-controls"><span id="feature-demo-caption">Select a heading or project card to inspect it.</span><button class="text-button" id="feature-replay" hidden><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-play"/></svg> Replay demo</button></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="motion-section section-space" id="motion" aria-labelledby="motion-title">
+      <div class="wrap">
+        <div class="motion-heading"><div><span class="section-label">New in 0.2.0</span><h2 id="motion-title">Capture what<br>screenshots can’t.</h2></div><p>The hover. The reveal. That perfectly timed transition.<br>Capture the behavior behind the interface,<br class="desktop-only"> then bring it into your next build.</p></div>
+        <div class="motion-demo" data-ui>
+          <div class="motion-toolbar"><div class="record-mode-tabs" role="group" aria-label="Recording mode"><button class="active" data-record-mode="region" aria-pressed="true"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-region"/></svg> Hold region</button><button data-record-mode="tab" aria-pressed="false"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-video"/></svg> Record tab</button></div><span class="record-limit"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-volume"/></svg> No audio <span>·</span> 30s max</span></div>
+          <div class="record-canvas"><div class="motion-site"><div class="motion-site-nav"><span>folio<span>®</span></span><span>Selected work &nbsp; &nbsp; About &nbsp; &nbsp; Contact ↗</span></div><div class="motion-site-body"><div class="motion-type"><span>Independent by design.</span><strong>Ideas made<br>to move.</strong><span class="motion-site-link">Explore the collection &nbsp; ↗</span></div><div class="motion-artwork"><p class="kinetic-row r1"><span>MAKE</span><span>MAKE</span></p><p class="kinetic-row r2"><span>IT</span><span>IT</span><span>IT</span></p><p class="kinetic-row r3"><span>MOVE.</span><span>MOVE.</span></p><span class="artwork-label">Motion study / 001</span></div></div></div><div class="record-selection"><i class="handle tl"></i><i class="handle tr"></i><i class="handle bl"></i><i class="handle br"></i><span class="region-caption">Selected region <span>640 × 360</span></span></div><div class="record-status"><span class="record-dot"></span><span id="record-state">Ready to capture</span><span class="record-timer" id="record-timer">00:00 <span>/ 00:30</span></span></div></div>
+          <div class="record-bottom"><div><strong id="record-instruction">Draw. Hold steady. Release.</strong><span id="record-help">Hold the button to simulate a region recording.</span></div><button class="record-button" id="record-button"><span class="record-button-dot"></span><span id="record-button-label">Hold to try</span></button></div>
+        </div>
+        <div class="motion-caption"><span>Interactive, illustrative demo. Nothing on your screen is recorded or sent.</span><span>Both modes stop automatically at 30 seconds.</span></div>
+      </div>
+    </section>
+
+    <section class="workflow wrap section-space" id="how-it-works" aria-labelledby="workflow-title">
+      <div class="section-heading"><h2 id="workflow-title">From a moment<br>to a starting point.</h2><p>Capture the interaction. Let AI unpack what’s happening.<br class="desktop-only"> Leave with HTML, CSS, and JavaScript you can build on.</p></div>
+      <ol class="workflow-steps"><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-video"/></svg><strong>Capture</strong><span>A region or the visible tab.</span></li><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-spark"/></svg><strong>Analyze</strong><span>Motion and interaction patterns.</span></li><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-code"/></svg><strong>Generate</strong><span>A frontend implementation.</span></li><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-download"/></svg><strong>Export</strong><span>Copy or download the code.</span></li></ol>
+      <div class="code-workbench" data-ui><div class="analysis-panel"><div class="workbench-heading"><img src="./assets/product/vclarity.svg" width="25" height="25" alt=""><strong>Motion & code</strong><span>Illustrative demo</span></div><div class="capture-file"><div class="capture-thumbnail"><span>MAKE<br>IT MOVE.</span><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-play"/></svg></div><div><strong>Interaction capture</strong><span>Record tab · 8.4s · WebM</span></div><svg class="icon completed-check"><use href="#i-check"/></svg></div><div class="analysis-status"><span class="analysis-status-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg></span><div><strong id="analysis-title">Your implementation is ready</strong><span id="analysis-detail">Example output · Estimated (AI)</span></div></div><div class="motion-observations"><h3>What the motion tells us</h3><p><span>Transition</span>Text rows slide in opposite directions.</p><p><span>Timing</span>A repeating, linear animation.</p><p><span>Interaction</span>Motion pauses when hovered or focused.</p></div><p class="ai-note">In Vclarity, analysis starts after you grant permission to send your capture to AI. Review generated code before using it.</p><button class="text-button" id="replay-analysis"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-play"/></svg> Replay example workflow</button></div><div class="code-panel"><div class="code-toolbar"><div role="tablist" aria-label="Generated example files"><button role="tab" aria-selected="true" id="code-tab-html" aria-controls="code-output" data-code="html">index.html</button><button role="tab" aria-selected="false" id="code-tab-css" aria-controls="code-output" tabindex="-1" data-code="css">styles.css</button><button role="tab" aria-selected="false" id="code-tab-js" aria-controls="code-output" tabindex="-1" data-code="js">script.js</button></div><span class="code-language" id="code-language">HTML</span></div><div class="code-output-wrap"><pre id="code-output" role="tabpanel" aria-labelledby="code-tab-html" tabindex="0"><code id="generated-code">&lt;!-- Motion study · illustrative output --&gt;
+&lt;section class="motion-study"
+  aria-label="Animated typography"&gt;
+  &lt;div class="marquee"&gt;
+    &lt;div class="track"&gt;
+      &lt;span&gt;MAKE IT MOVE.&lt;/span&gt;
+      &lt;span aria-hidden="true"&gt;
+        MAKE IT MOVE.
+      &lt;/span&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;button class="motion-toggle"
+    aria-pressed="false"&gt;
+    Pause motion
+  &lt;/button&gt;
+&lt;/section&gt;
+&lt;link rel="stylesheet" href="styles.css"&gt;
+&lt;script src="script.js" defer&gt;&lt;/script&gt;</code></pre></div><div class="code-footer"><span><span class="status-dot"></span> Generated files <span class="file-count">3</span></span><div><button class="text-button" id="copy-code"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-copy"/></svg> Copy</button><button class="download-code" id="download-code"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-download"/></svg> Download</button></div></div></div></div>
+      <p class="workflow-footnote">AI helps reconstruct the visible interface and behavior. Results are a starting point, and may need refinement.</p>
+    </section>
+
+    <section class="use-cases section-space" aria-labelledby="use-cases-title"><div class="wrap use-cases-grid"><div class="use-case-intro"><h2 id="use-cases-title">For the naturally<br>curious builder.</h2><p>Keep the inspiration.<br>Understand the implementation.</p><div class="shortcut-art" aria-hidden="true"><span class="large-key">Alt</span><span class="large-key">I</span><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-cursor"/></svg></div></div><div class="use-case-list"><article><h3>Build with fewer guesses.</h3><p>Frontend developers: read the real spacing, type, and layout values before writing your next component.</p><span>Live Inspect <span>↗</span></span></article><article><h3>Study the system behind the screen.</h3><p>UI/UX designers: select a visual region to explore its hierarchy, composition, and component structure.</p><span>Ghost Inspect <span>↗</span></span></article><article><h3>Give your AI the full picture.</h3><p>AI-assisted developers: capture the reveal, hover, or transition you want to understand, then work from generated code.</p><span>Video Capture <span>↗</span></span></article></div></div></section>
+
+    <section class="faq wrap section-space" id="faq" aria-labelledby="faq-title"><div class="faq-intro"><h2 id="faq-title">A little more clarity.</h2><p>The details, before you dive in.</p><img src="./assets/product/vclarity.svg" width="72" height="72" alt="" loading="lazy"></div><div class="faq-list">
+      <details open><summary>What is Vclarity?<svg class="icon" aria-hidden="true" focusable="false"><use href="#i-plus"/></svg></summary><p>Vclarity is a Chrome extension for inspecting web interfaces, understanding visual regions, and capturing interactions. Version 0.2.0 adds video capture and AI-assisted HTML, CSS, and JavaScript generation. It is currently available as a developer preview.</p></details>
+      <details><summary>How does Live Inspect work?<svg class="icon" aria-hidden="true" focusable="false"><use href="#i-plus"/></svg></summary><p>Press Alt + I, hover over an element, then select it. Vclarity reads its real DOM and computed CSS, including typography, colors, dimensions, padding, margins, and border radius. These measurements are labeled Exact (DOM).</p></details>
+      <details><summary>How is Ghost Inspect different?<svg class="icon" aria-hidden="true" focusable="false"><use href="#i-plus"/></svg></summary><p>Live Inspect measures a specific DOM element. With Ghost Inspect (Alt + S), you draw a rectangle around a larger visual region. Image-based AI analysis helps explain the composition and reconstruct its structure. AI estimates are not exact DOM measurements.</p></details>
+      <details><summary>What can Video Capture record?<svg class="icon" aria-hidden="true" focusable="false"><use href="#i-plus"/></svg></summary><p>Capture visible website animations, transitions, hover states, and interactions. Hold region records your drawn rectangle while you keep the mouse button held and stationary; release to stop. Record tab captures the visible tab with a recording toggle and Stop control. Both stop automatically at 30 seconds.</p></details>
+      <details><summary>Does it record audio?<svg class="icon" aria-hidden="true" focusable="false"><use href="#i-plus"/></svg></summary><p>No. Neither Hold region nor Record tab records audio.</p></details>
+      <details><summary>Why is there a 30-second limit?<svg class="icon" aria-hidden="true" focusable="false"><use href="#i-plus"/></svg></summary><p>Version 0.2.0 is designed for short interface interactions. Recording is capped at 30 seconds per capture in both modes, and stops automatically at that limit. Capture a focused interaction for each analysis.</p></details>
+      <details><summary>What happens when I send a video to AI?<svg class="icon" aria-hidden="true" focusable="false"><use href="#i-plus"/></svg></summary><p>After you grant permission to send captures to AI, a completed video is submitted through the configured Vclarity API for analysis. The extension displays its processing status, motion observations, and generated code. The service must receive the capture to analyze it; only send content you intend to share. This page’s demos do not upload anything.</p></details>
+      <details><summary>Can I copy and download the generated code?<svg class="icon" aria-hidden="true" focusable="false"><use href="#i-plus"/></svg></summary><p>Yes. You can copy or download the generated HTML, CSS, and JavaScript. AI output is an interpretation of the visible interface and behavior, so review and test it before use. Pixel-perfect source reconstruction and code accuracy are not guaranteed.</p></details>
+    </div></section>
+
+    <section class="final-cta wrap section-space" aria-labelledby="cta-title"><img src="./assets/product/vclarity.svg" width="64" height="64" alt="" loading="lazy"><h2 id="cta-title">Make every interface<br>an inspiration.</h2><p>Great interfaces have a lot to teach.<br>Get a little closer.</p><button class="button" data-open-preview><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-chrome"/></svg> Get the preview <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></button><span class="final-availability">Vclarity 0.2.0 · Chrome developer preview</span></section>
+  </main>
+  <footer class="footer wrap"><a class="brand" href="#" aria-label="Vclarity home"><img src="./assets/product/vclarity.svg" width="28" height="28" alt=""><span>vclarity<span class="brand-dot">.</span></span></a><span>A clearer view. A better starting point.</span><div><a href="#features">Explore features</a><a href="./docs/preview-guide.html">Preview guide <span>↗</span></a><span>© 2026 Vclarity</span></div></footer>
+
+  <dialog class="preview-dialog" id="preview-dialog" aria-labelledby="preview-title"><button class="dialog-close" aria-label="Close preview details"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-close"/></svg></button><img src="./assets/product/vclarity.svg" width="54" height="54" alt=""><span class="preview-version">Vclarity 0.2.0</span><h2 id="preview-title">A clearer view starts here.</h2><p>Vclarity is currently a developer preview. Install the unpacked extension in desktop Chrome to explore all three modes.</p><ol><li>Download and extract the extension ZIP.</li><li>Open <code>chrome://extensions</code> and enable Developer mode.</li><li>Choose <strong>Load unpacked</strong> and select the extracted folder.</li></ol><a class="button preview-download" href="./assets/downloads/vclarity-0.2.0-chrome.zip" download><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-download"/></svg> Download developer preview</a><a class="preview-guide-link" href="./docs/preview-guide.html">Read setup and AI configuration guide <span>↗</span></a><p class="preview-note">Public Chrome Web Store release is not yet available. AI features require a configured Vclarity API.</p></dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <span class="sr-only" id="demo-announcement" role="status" aria-live="polite"></span>
+</body>
+</html>

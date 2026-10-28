@@ -1,0 +1,177 @@
+{
+  "passed": 20,
+  "failed": 0,
+  "results": [
+    {
+      "name": "Page loads with Inter, metadata and semantic main",
+      "status": "PASS",
+      "details": {
+        "title": "Vclarity 0.2.0 — See beyond the pixels.",
+        "description": "Vclarity 0.2.0 is a Chrome extension for exact DOM inspection, AI-assisted visual analysis, and capturing website interactions to generate frontend code.",
+        "font": true,
+        "loadedInter": true,
+        "h1": 1,
+        "main": 1,
+        "skip": "#main",
+        "images": []
+      }
+    },
+    {
+      "name": "Desktop navigation anchors scroll to their destinations",
+      "status": "PASS",
+      "details": [
+        {
+          "id": "features",
+          "top": 56
+        },
+        {
+          "id": "how-it-works",
+          "top": 56
+        },
+        {
+          "id": "faq",
+          "top": 56
+        }
+      ]
+    },
+    {
+      "name": "Developer preview modal supports Escape and focus restoration",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "name": "Preview archive is a valid downloadable ZIP; guide is available",
+      "status": "PASS",
+      "details": {
+        "bytes": 191022,
+        "mime": "application/zip"
+      }
+    },
+    {
+      "name": "Live Inspect displays actual computed values and copies CSS",
+      "status": "PASS",
+      "details": {
+        "fontSize": "16px",
+        "width": 282,
+        "height": 128
+      }
+    },
+    {
+      "name": "Feature tabs support arrows, Home/End and honest Ghost output",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "name": "Code tabs, clipboard and ZIP export work",
+      "status": "PASS",
+      "details": {
+        "clipboardCharacters": 969,
+        "downloadBytes": 2788
+      }
+    },
+    {
+      "name": "Illustrative workflow reaches completed output",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "name": "Hold Region pointer press records; release stops",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "name": "Hold Region supports Space and Enter release controls",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "name": "Record Tab toggles Start/Stop and mode change resets capture",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "name": "Both recording modes stop automatically at 30 seconds",
+      "status": "PASS",
+      "details": {
+        "acceleratedClock": true
+      }
+    },
+    {
+      "name": "Reduced motion disables recording animation and reveals content",
+      "status": "PASS",
+      "details": {
+        "media": true,
+        "rowAnimation": "none",
+        "indicatorAnimation": "none",
+        "smoothScroll": "auto",
+        "hiddenReveals": 0
+      }
+    },
+    {
+      "name": "Mobile navigation is keyboard accessible and closes on Escape/selection",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "name": "1440px responsive layout and screenshots",
+      "status": "PASS",
+      "details": {
+        "viewport": 1440,
+        "document": 1440,
+        "body": 1440,
+        "overflowing": []
+      }
+    },
+    {
+      "name": "768px responsive layout and screenshots",
+      "status": "PASS",
+      "details": {
+        "viewport": 768,
+        "document": 768,
+        "body": 768,
+        "overflowing": []
+      }
+    },
+    {
+      "name": "390px responsive layout and screenshots",
+      "status": "PASS",
+      "details": {
+        "viewport": 390,
+        "document": 390,
+        "body": 390,
+        "overflowing": []
+      }
+    },
+    {
+      "name": "320px responsive layout and screenshots",
+      "status": "PASS",
+      "details": {
+        "viewport": 320,
+        "document": 320,
+        "body": 320,
+        "overflowing": []
+      }
+    },
+    {
+      "name": "FAQ opens with keyboard and exposes the answer",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "name": "No unexpected console, page or network failures",
+      "status": "PASS",
+      "details": {
+        "console": [],
+        "page": [],
+        "requests": []
+      }
+    }
+  ],
+  "browserErrors": {
+    "console": [],
+    "page": [],
+    "requests": []
+  },
+  "screenshots": "qa/screenshots/",
+  "downloads": "qa/vclarity-motion-example.zip"
+}

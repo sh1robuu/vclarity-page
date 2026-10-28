@@ -1,0 +1,2777 @@
+{
+ "url": "http://127.0.0.1:4173",
+ "at": "2026-10-28T15:18:54.586Z",
+ "allow": [
+  "eyebrow",
+  "mono",
+  "outlined-box",
+  "shadow",
+  "numbering",
+  "micro-label",
+  "hairline",
+  "small-text"
+ ],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 7,
+   "filled": [
+    0.45,
+    0.44,
+    0.81,
+    0.49,
+    0.63,
+    0.44,
+    0.61
+   ],
+   "motion": {
+    "elements": 15,
+    "css": 0,
+    "transitions": 15,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 6275,
+     "screens": 7,
+     "words": 854,
+     "img": 7,
+     "video": 0,
+     "canvas": 0,
+     "svg": 40,
+     "sections": 7,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 4,
+     "uiAbuse": false,
+     "realPictures": 0,
+     "videoCount": 0,
+     "uiPictures": 4,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "See beyond the pixels.",
+     "words": 4,
+     "chars": 22,
+     "lines": 1,
+     "size": 79,
+     "vw": 5.5,
+     "font": "Inter",
+     "weight": 570,
+     "tracking": -0.054,
+     "leading": 1.09,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "center",
+     "position": "center",
+     "widthRatio": 0.81,
+     "top": 196,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "See beyond the pixels.",
+     "words": 4,
+     "lines": 1,
+     "size": 79,
+     "font": "Inter"
+    },
+    "headings": [
+     {
+      "text": "See beyond the pixels.",
+      "words": 4,
+      "chars": 22,
+      "lines": 1,
+      "size": 79,
+      "vw": 5.5,
+      "font": "Inter",
+      "weight": 570,
+      "tracking": -0.054,
+      "leading": 1.09,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.81,
+      "top": 196,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "▱",
+      "words": 1,
+      "chars": 1,
+      "lines": 1,
+      "size": 36,
+      "vw": 2.5,
+      "font": "Inter",
+      "weight": 600,
+      "tracking": -0.028,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.02,
+      "top": 564,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "Good ideas. Room to grow.",
+      "words": 5,
+      "chars": 25,
+      "lines": 2,
+      "size": 58,
+      "vw": 4,
+      "font": "Inter",
+      "weight": 500,
+      "tracking": -0.043,
+      "leading": 1.06,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.55,
+      "top": 696,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "Your browser. A different perspective.",
+      "words": 5,
+      "chars": 38,
+      "lines": 2,
+      "size": 43,
+      "vw": 3,
+      "font": "Inter",
+      "weight": 550,
+      "tracking": -0.042,
+      "leading": 1.16,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.31,
+      "top": 1212,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "The real CSS. Right in front of you.",
+      "words": 8,
+      "chars": 36,
+      "lines": 2,
+      "size": 31,
+      "vw": 2.2,
+      "font": "Inter",
+      "weight": 550,
+      "tracking": -0.035,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.31,
+      "top": 1573,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Capture what screenshots can’t.",
+      "words": 4,
+      "chars": 31,
+      "lines": 2,
+      "size": 47,
+      "vw": 3.3,
+      "font": "Inter",
+      "weight": 550,
+      "tracking": -0.038,
+      "leading": 1.16,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.27,
+      "top": 2168,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "MAKE MAKE",
+      "words": 2,
+      "chars": 9,
+      "lines": 1,
+      "size": 69,
+      "vw": 4.8,
+      "font": "Inter",
+      "weight": 800,
+      "tracking": -0.087,
+      "leading": 0.83,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.27,
+      "top": 2502,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Ideas made to move.",
+      "words": 4,
+      "chars": 19,
+      "lines": 2,
+      "size": 47,
+      "vw": 3.3,
+      "font": "Inter",
+      "weight": 500,
+      "tracking": -0.053,
+      "leading": 1.04,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.16,
+      "top": 2532,
+      "tag": "strong",
+      "kind": "heading"
+     },
+     {
+      "text": "IT IT IT",
+      "words": 3,
+      "chars": 8,
+      "lines": 1,
+      "size": 69,
+      "vw": 4.8,
+      "font": "Inter",
+      "weight": 800,
+      "tracking": -0.087,
+      "leading": 0.83,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.14,
+      "top": 2559,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "MOVE. MOVE.",
+      "words": 2,
+      "chars": 11,
+      "lines": 1,
+      "size": 69,
+      "vw": 4.8,
+      "font": "Inter",
+      "weight": 800,
+      "tracking": -0.087,
+      "leading": 0.83,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.3,
+      "top": 2617,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "From a moment to a starting point.",
+      "words": 7,
+      "chars": 34,
+      "lines": 2,
+      "size": 43,
+      "vw": 3,
+      "font": "Inter",
+      "weight": 550,
+      "tracking": -0.042,
+      "leading": 1.16,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.24,
+      "top": 3042,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "For the naturally curious builder.",
+      "words": 5,
+      "chars": 34,
+      "lines": 2,
+      "size": 43,
+      "vw": 3,
+      "font": "Inter",
+      "weight": 550,
+      "tracking": -0.042,
+      "leading": 1.16,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.36,
+      "top": 4078,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "A little more clarity.",
+      "words": 4,
+      "chars": 22,
+      "lines": 1,
+      "size": 36,
+      "vw": 2.5,
+      "font": "Inter",
+      "weight": 550,
+      "tracking": -0.05,
+      "leading": 1.16,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.3,
+      "top": 4823,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Make every interface an inspiration.",
+      "words": 5,
+      "chars": 36,
+      "lines": 2,
+      "size": 52,
+      "vw": 3.6,
+      "font": "Inter",
+      "weight": 550,
+      "tracking": -0.044,
+      "leading": 1.14,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.81,
+      "top": 5784,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 14,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 3,
+     "centered": 2,
+     "medianWords": 4,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Inter",
+       "share": 0.89,
+       "mono": false
+      },
+      {
+       "family": "Consolas",
+       "share": 0.11,
+       "mono": true
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      9,
+      10,
+      11,
+      12,
+      14,
+      15,
+      16,
+      18,
+      19,
+      20,
+      25,
+      27,
+      36,
+      43,
+      47,
+      52,
+      79
+     ],
+     "sizeCount": 17,
+     "notLoaded": [
+      "Consolas"
+     ],
+     "body": {
+      "font": "Inter",
+      "size": 16,
+      "leading": 1.8,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 5
+     },
+     "measureChars": 81,
+     "max": {
+      "size": 79,
+      "vw": 5.5,
+      "font": "Inter",
+      "text": "See beyond the pixels."
+     },
+     "monoShare": 0.11,
+     "monoProseShare": 0.01,
+     "monoFamilies": [
+      "Consolas"
+     ],
+     "monoSamples": [
+      "button.primary",
+      "181 × 44",
+      "L / 024",
+      "button.heading",
+      "292 × 36",
+      "HTML"
+     ],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.01,
+     "centerShare": 0.09,
+     "smallText": 26
+    },
+    "eyebrows": [
+     {
+      "text": "A new perspective. Now in motion.",
+      "above": "See beyond the pixels.",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 151
+     },
+     {
+      "text": "New in 0.2.0",
+      "above": "Capture what screenshots can’t.",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 2134
+     }
+    ],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#ffffff",
+     "bodyBgHsl": {
+      "h": 0,
+      "s": 0,
+      "l": 1
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#ffffff",
+       "top": 495,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 1
+       }
+      },
+      {
+       "color": "#fbfaf7",
+       "top": 539,
+       "hsl": {
+        "h": 45,
+        "s": 0.33,
+        "l": 0.98
+       }
+      },
+      {
+       "color": "#f8f9fb",
+       "top": 1449,
+       "hsl": {
+        "h": 220,
+        "s": 0.27,
+        "l": 0.98
+       }
+      },
+      {
+       "color": "#101929",
+       "top": 2058,
+       "hsl": {
+        "h": 218,
+        "s": 0.44,
+        "l": 0.11
+       }
+      },
+      {
+       "color": "#172235",
+       "top": 2313,
+       "hsl": {
+        "h": 218,
+        "s": 0.39,
+        "l": 0.15
+       }
+      },
+      {
+       "color": "#f6f8ff",
+       "top": 5642,
+       "hsl": {
+        "h": 227,
+        "s": 1,
+        "l": 0.98
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#606978",
+       "share": 0.32
+      },
+      {
+       "color": "#69707d",
+       "share": 0.26
+      },
+      {
+       "color": "#15171c",
+       "share": 0.11
+      },
+      {
+       "color": "#576b9a",
+       "share": 0.1
+      },
+      {
+       "color": "#b2bed3",
+       "share": 0.03
+      }
+     ],
+     "button": {
+      "bg": "#ffffff",
+      "hsl": {
+       "h": 0,
+       "s": 0,
+       "l": 1
+      },
+      "fg": "#ffffff"
+     },
+     "lowContrast": [
+      {
+       "text": "Bring your thoughts, projects, and possi",
+       "ratio": 4.4,
+       "need": 4.5,
+       "size": 11,
+       "fg": "#6f776e",
+       "bg": "#fbfaf7"
+      },
+      {
+       "text": "/ 00:30",
+       "ratio": 4.4,
+       "need": 4.5,
+       "size": 10,
+       "fg": "#7b8aa4",
+       "bg": "#18243a"
+      }
+     ]
+    },
+    "buttons": {
+     "count": 14,
+     "inHero": 4,
+     "radius": 8,
+     "height": 80,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Skip to content",
+      "Get the preview",
+      "Get the preview",
+      "Watch demo"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 2,
+     "shadowOverlay": 3,
+     "shadowSamples": [
+      "span.large-key → rgb(238, 240, 244) 0px 5px 0px 0px",
+      "span.large-key → rgb(238, 240, 244) 0px 5px 0px 0px"
+     ],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 10,
+     "hairlineSamples": [
+      "article.reveal-ready.revealed 525px",
+      "article.reveal-ready.revealed 525px",
+      "details 648px",
+      "details 648px",
+      "details 648px"
+     ],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 8,
+     "boxRadius": 12,
+     "squareMedia": 0,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [],
+    "nav": {
+     "links": 4,
+     "fixed": false,
+     "height": 86,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "inter"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 6275,
+    "margins": {
+     "left": 140,
+     "right": 140
+    },
+    "sections": [
+     {
+      "sel": "section.hero.wrap",
+      "tag": "section",
+      "top": 86,
+      "height": 986,
+      "words": 158,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "See beyond the pixels.",
+       "size": 79,
+       "tag": "h1"
+      },
+      "left": 152,
+      "right": 140,
+      "textLeft": 152,
+      "textRight": 140,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#features.features.wrap",
+      "tag": "section",
+      "top": 1212,
+      "height": 707,
+      "words": 156,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Your browser.",
+       "size": 43,
+       "tag": "h2"
+      },
+      "left": 140,
+      "right": 140,
+      "textLeft": 140,
+      "textRight": 140,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#motion.motion-section.section-space",
+      "tag": "section",
+      "top": 2058,
+      "height": 843,
+      "words": 110,
+      "media": 0,
+      "middle": 121,
+      "heading": {
+       "text": "MAKE",
+       "size": 69,
+       "tag": "span"
+      },
+      "left": 140,
+      "right": 140,
+      "textLeft": 140,
+      "textRight": 140,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#how-it-works.workflow.wrap",
+      "tag": "section",
+      "top": 3042,
+      "height": 826,
+      "words": 262,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "From a moment",
+       "size": 43,
+       "tag": "h2"
+      },
+      "left": 140,
+      "right": 140,
+      "textLeft": 140,
+      "textRight": 140,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.use-cases.section-space",
+      "tag": "section",
+      "top": 4008,
+      "height": 675,
+      "words": 86,
+      "media": 0,
+      "middle": 328,
+      "heading": {
+       "text": "For the naturally",
+       "size": 43,
+       "tag": "h2"
+      },
+      "left": 140,
+      "right": 260,
+      "textLeft": 140,
+      "textRight": 260,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#faq.faq.wrap",
+      "tag": "section",
+      "top": 4823,
+      "height": 679,
+      "words": 274,
+      "media": 0,
+      "middle": 216,
+      "heading": {
+       "text": "A little more clarity.",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 134,
+      "right": 169,
+      "textLeft": 140,
+      "textRight": 169,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.final-cta.wrap",
+      "tag": "section",
+      "top": 5642,
+      "height": 513,
+      "words": 25,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Make every interface",
+       "size": 52,
+       "tag": "h2"
+      },
+      "left": 479,
+      "right": 479,
+      "textLeft": 479,
+      "textRight": 479,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.footer.wrap",
+      "tag": "footer",
+      "top": 6155,
+      "height": 120,
+      "words": 15,
+      "media": 0,
+      "middle": 505,
+      "heading": null,
+      "left": 171,
+      "right": 140,
+      "textLeft": 171,
+      "textRight": 140,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "See beyond the pixels.",
+      "size": 79,
+      "top": 196,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 140,
+      "n": 9
+     },
+     {
+      "x": 652,
+      "n": 7
+     },
+     {
+      "x": 775,
+      "n": 6
+     }
+    ],
+    "leftBlocks": 22,
+    "bodySize": 16,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0.1,
+    "voidBox": {
+     "x": 0,
+     "y": 120,
+     "w": 300,
+     "h": 420
+    }
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 768,
+   "height": 1024,
+   "load": "load",
+   "screens": 6,
+   "filled": [
+    0.42,
+    0.74,
+    0.7,
+    0.67,
+    0.47,
+    0.59
+   ],
+   "motion": {
+    "elements": 15,
+    "css": 0,
+    "transitions": 15,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "page": {
+     "height": 5712,
+     "screens": 5.6,
+     "words": 816,
+     "img": 7,
+     "video": 0,
+     "canvas": 0,
+     "svg": 40,
+     "sections": 7,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 4,
+     "uiAbuse": false,
+     "realPictures": 0,
+     "videoCount": 0,
+     "uiPictures": 4,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "See beyond the pixels.",
+     "words": 4,
+     "chars": 22,
+     "lines": 1,
+     "size": 57,
+     "vw": 7.4,
+     "font": "Inter",
+     "weight": 570,
+     "tracking": -0.053,
+     "leading": 1.09,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "center",
+     "position": "center",
+     "widthRatio": 0.94,
+     "top": 163,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "See beyond the pixels.",
+     "words": 4,
+     "lines": 1,
+     "size": 57,
+     "font": "Inter"
+    },
+    "headings": [
+     {
+      "text": "See beyond the pixels.",
+      "words": 4,
+      "chars": 22,
+      "lines": 1,
+      "size": 57,
+      "vw": 7.4,
+      "font": "Inter",
+      "weight": 570,
+      "tracking": -0.053,
+      "leading": 1.09,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.94,
+      "top": 163,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "▱",
+      "words": 1,
+      "chars": 1,
+      "lines": 1,
+      "size": 36,
+      "vw": 4.7,
+      "font": "Inter",
+      "weight": 600,
+      "tracking": -0.028,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.05,
+      "top": 515,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "Good ideas. Room to grow.",
+      "words": 5,
+      "chars": 25,
+      "lines": 2,
+      "size": 43,
+      "vw": 5.6,
+      "font": "Inter",
+      "weight": 500,
+      "tracking": -0.058,
+      "leading": 1.06,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.57,
+      "top": 643,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "Your browser. A different perspective.",
+      "words": 5,
+      "chars": 38,
+      "lines": 2,
+      "size": 36,
+      "vw": 4.7,
+      "font": "Inter",
+      "weight": 550,
+      "tracking": -0.042,
+      "leading": 1.16,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.49,
+      "top": 1061,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Capture what screenshots can’t.",
+      "words": 4,
+      "chars": 31,
+      "lines": 2,
+      "size": 39,
+      "vw": 5.1,
+      "font": "Inter",
+      "weight": 550,
+      "tracking": -0.038,
+      "leading": 1.16,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.41,
+      "top": 1892,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "MAKE MAKE",
+      "words": 2,
+      "chars": 9,
+      "lines": 1,
+      "size": 61,
+      "vw": 7.9,
+      "font": "Inter",
+      "weight": 800,
+      "tracking": -0.098,
+      "leading": 0.83,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.44,
+      "top": 2198,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Ideas made to move.",
+      "words": 4,
+      "chars": 19,
+      "lines": 2,
+      "size": 38,
+      "vw": 4.9,
+      "font": "Inter",
+      "weight": 500,
+      "tracking": -0.066,
+      "leading": 1.04,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.24,
+      "top": 2228,
+      "tag": "strong",
+      "kind": "heading"
+     },
+     {
+      "text": "IT IT IT",
+      "words": 3,
+      "chars": 8,
+      "lines": 1,
+      "size": 61,
+      "vw": 7.9,
+      "font": "Inter",
+      "weight": 800,
+      "tracking": -0.098,
+      "leading": 0.83,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.24,
+      "top": 2249,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "MOVE. MOVE.",
+      "words": 2,
+      "chars": 11,
+      "lines": 1,
+      "size": 61,
+      "vw": 7.9,
+      "font": "Inter",
+      "weight": 800,
+      "tracking": -0.098,
+      "leading": 0.83,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.48,
+      "top": 2300,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "From a moment to a starting point.",
+      "words": 7,
+      "chars": 34,
+      "lines": 2,
+      "size": 36,
+      "vw": 4.7,
+      "font": "Inter",
+      "weight": 550,
+      "tracking": -0.042,
+      "leading": 1.16,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.37,
+      "top": 2666,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "For the naturally curious builder.",
+      "words": 5,
+      "chars": 34,
+      "lines": 2,
+      "size": 33,
+      "vw": 4.3,
+      "font": "Inter",
+      "weight": 550,
+      "tracking": -0.045,
+      "leading": 1.16,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.42,
+      "top": 3585,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "A little more clarity.",
+      "words": 4,
+      "chars": 22,
+      "lines": 1,
+      "size": 30,
+      "vw": 3.9,
+      "font": "Inter",
+      "weight": 550,
+      "tracking": -0.05,
+      "leading": 1.16,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.36,
+      "top": 4301,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Make every interface an inspiration.",
+      "words": 5,
+      "chars": 36,
+      "lines": 2,
+      "size": 43,
+      "vw": 5.6,
+      "font": "Inter",
+      "weight": 550,
+      "tracking": -0.053,
+      "leading": 1.14,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.94,
+      "top": 5241,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 13,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 3,
+     "centered": 2,
+     "medianWords": 4,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Inter",
+       "share": 0.89,
+       "mono": false
+      },
+      {
+       "family": "Consolas",
+       "share": 0.11,
+       "mono": true
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      8,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      20,
+      21,
+      22,
+      30,
+      33,
+      36,
+      39,
+      43,
+      57
+     ],
+     "sizeCount": 17,
+     "notLoaded": [
+      "Consolas"
+     ],
+     "body": {
+      "font": "Inter",
+      "size": 15,
+      "leading": 1.9,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 5.3
+     },
+     "measureChars": 56,
+     "max": {
+      "size": 61,
+      "vw": 7.9,
+      "font": "Inter",
+      "text": "MAKE"
+     },
+     "monoShare": 0.11,
+     "monoProseShare": 0.01,
+     "monoFamilies": [
+      "Consolas"
+     ],
+     "monoSamples": [
+      "button.primary",
+      "145 × 44",
+      "button.heading",
+      "210 × 26"
+     ],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.01,
+     "centerShare": 0.09,
+     "smallText": 27
+    },
+    "eyebrows": [
+     {
+      "text": "A new perspective. Now in motion.",
+      "above": "See beyond the pixels.",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 118
+     },
+     {
+      "text": "New in 0.2.0",
+      "above": "Capture what screenshots can’t.",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 1859
+     }
+    ],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#ffffff",
+     "bodyBgHsl": {
+      "h": 0,
+      "s": 0,
+      "l": 1
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#ffffff",
+       "top": 450,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 1
+       }
+      },
+      {
+       "color": "#f8f9fb",
+       "top": 1263,
+       "hsl": {
+        "h": 220,
+        "s": 0.27,
+        "l": 0.98
+       }
+      },
+      {
+       "color": "#101929",
+       "top": 1799,
+       "hsl": {
+        "h": 218,
+        "s": 0.44,
+        "l": 0.11
+       }
+      },
+      {
+       "color": "#172235",
+       "top": 2018,
+       "hsl": {
+        "h": 218,
+        "s": 0.39,
+        "l": 0.15
+       }
+      },
+      {
+       "color": "#f6f8ff",
+       "top": 5099,
+       "hsl": {
+        "h": 227,
+        "s": 1,
+        "l": 0.98
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#606978",
+       "share": 0.33
+      },
+      {
+       "color": "#69707d",
+       "share": 0.26
+      },
+      {
+       "color": "#15171c",
+       "share": 0.12
+      },
+      {
+       "color": "#576b9a",
+       "share": 0.1
+      },
+      {
+       "color": "#b2bed3",
+       "share": 0.03
+      }
+     ],
+     "button": {
+      "bg": "#ffffff",
+      "hsl": {
+       "h": 0,
+       "s": 0,
+       "l": 1
+      },
+      "fg": "#ffffff"
+     },
+     "lowContrast": [
+      {
+       "text": "Bring your thoughts, projects, and possi",
+       "ratio": 4.4,
+       "need": 4.5,
+       "size": 10,
+       "fg": "#6f776e",
+       "bg": "#fbfaf7"
+      },
+      {
+       "text": "/ 00:30",
+       "ratio": 4.4,
+       "need": 4.5,
+       "size": 10,
+       "fg": "#7b8aa4",
+       "bg": "#18243a"
+      }
+     ]
+    },
+    "buttons": {
+     "count": 14,
+     "inHero": 6,
+     "radius": 8,
+     "height": 60,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Skip to content",
+      "Get the preview",
+      "Get the preview",
+      "Watch demo",
+      "Find your focus ↗"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 2,
+     "shadowOverlay": 3,
+     "shadowSamples": [
+      "span.large-key → rgb(238, 240, 244) 0px 5px 0px 0px",
+      "span.large-key → rgb(238, 240, 244) 0px 5px 0px 0px"
+     ],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 10,
+     "hairlineSamples": [
+      "article.reveal-ready.revealed 325px",
+      "article.reveal-ready.revealed 325px",
+      "details 417px",
+      "details 417px",
+      "details 417px"
+     ],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 7,
+     "boxRadius": 12,
+     "squareMedia": 0,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [],
+    "nav": {
+     "links": 4,
+     "fixed": false,
+     "height": 76,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "inter"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "pageH": 5712,
+    "margins": {
+     "left": 24,
+     "right": 26
+    },
+    "sections": [
+     {
+      "sel": "section.hero.wrap",
+      "tag": "section",
+      "top": 76,
+      "height": 889,
+      "words": 135,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "See beyond the pixels.",
+       "size": 57,
+       "tag": "h1"
+      },
+      "left": 36,
+      "right": 38,
+      "textLeft": 36,
+      "textRight": 38,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#features.features.wrap",
+      "tag": "section",
+      "top": 1061,
+      "height": 642,
+      "words": 151,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Your browser.",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 24,
+      "right": 24,
+      "textLeft": 24,
+      "textRight": 26,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#motion.motion-section.section-space",
+      "tag": "section",
+      "top": 1799,
+      "height": 759,
+      "words": 110,
+      "media": 0,
+      "middle": 6,
+      "heading": {
+       "text": "MAKE",
+       "size": 61,
+       "tag": "span"
+      },
+      "left": 24,
+      "right": 24,
+      "textLeft": 24,
+      "textRight": 24,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#how-it-works.workflow.wrap",
+      "tag": "section",
+      "top": 2653,
+      "height": 781,
+      "words": 261,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "From a moment",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 24,
+      "right": 25,
+      "textLeft": 24,
+      "textRight": 25,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.use-cases.section-space",
+      "tag": "section",
+      "top": 3530,
+      "height": 675,
+      "words": 86,
+      "media": 0,
+      "middle": 162,
+      "heading": {
+       "text": "For the naturally",
+       "size": 33,
+       "tag": "h2"
+      },
+      "left": 24,
+      "right": 39,
+      "textLeft": 24,
+      "textRight": 39,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#faq.faq.wrap",
+      "tag": "section",
+      "top": 4301,
+      "height": 702,
+      "words": 274,
+      "media": 0,
+      "middle": 57,
+      "heading": {
+       "text": "A little more clarity.",
+       "size": 30,
+       "tag": "h2"
+      },
+      "left": 18,
+      "right": 53,
+      "textLeft": 24,
+      "textRight": 53,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.final-cta.wrap",
+      "tag": "section",
+      "top": 5099,
+      "height": 493,
+      "words": 25,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Make every interface",
+       "size": 43,
+       "tag": "h2"
+      },
+      "left": 189,
+      "right": 189,
+      "textLeft": 189,
+      "textRight": 189,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.footer.wrap",
+      "tag": "footer",
+      "top": 5592,
+      "height": 120,
+      "words": 8,
+      "media": 0,
+      "middle": 341,
+      "heading": null,
+      "left": 55,
+      "right": 24,
+      "textLeft": 55,
+      "textRight": 24,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "See beyond the pixels.",
+      "size": 57,
+      "top": 163,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 24,
+      "n": 9
+     },
+     {
+      "x": 327,
+      "n": 7
+     },
+     {
+      "x": 419,
+      "n": 6
+     }
+    ],
+    "leftBlocks": 22,
+    "bodySize": 15,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 9,
+   "filled": [
+    0.67,
+    0.5,
+    0.76,
+    0.7,
+    0.73,
+    0.87,
+    0.56,
+    0.86,
+    0.79
+   ],
+   "motion": {
+    "elements": 15,
+    "css": 0,
+    "transitions": 15,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 6883,
+     "screens": 8.2,
+     "words": 785,
+     "img": 7,
+     "video": 0,
+     "canvas": 0,
+     "svg": 40,
+     "sections": 7,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 4,
+     "uiAbuse": false,
+     "realPictures": 0,
+     "videoCount": 0,
+     "uiPictures": 4,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "See beyond the pixels.",
+     "words": 4,
+     "chars": 22,
+     "lines": 2,
+     "size": 49,
+     "vw": 12.6,
+     "font": "Inter",
+     "weight": 570,
+     "tracking": -0.055,
+     "leading": 1.07,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "center",
+     "position": "center",
+     "widthRatio": 0.9,
+     "top": 144,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "See beyond the pixels.",
+     "words": 4,
+     "lines": 2,
+     "size": 49,
+     "font": "Inter"
+    },
+    "headings": [
+     {
+      "text": "vclarity.",
+      "words": 1,
+      "chars": 9,
+      "lines": 1,
+      "size": 23,
+      "vw": 5.9,
+      "font": "Inter",
+      "weight": 650,
+      "tracking": -0.052,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.28,
+      "top": 21,
+      "tag": "a",
+      "kind": "heading"
+     },
+     {
+      "text": "See beyond the pixels.",
+      "words": 4,
+      "chars": 22,
+      "lines": 2,
+      "size": 49,
+      "vw": 12.6,
+      "font": "Inter",
+      "weight": 570,
+      "tracking": -0.055,
+      "leading": 1.07,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 144,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "▱",
+      "words": 1,
+      "chars": 1,
+      "lines": 1,
+      "size": 28,
+      "vw": 7.2,
+      "font": "Inter",
+      "weight": 600,
+      "tracking": -0.036,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.07,
+      "top": 516,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "Good ideas. Room to grow.",
+      "words": 5,
+      "chars": 25,
+      "lines": 2,
+      "size": 40,
+      "vw": 10.3,
+      "font": "Inter",
+      "weight": 500,
+      "tracking": -0.045,
+      "leading": 1.06,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.78,
+      "top": 603,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "Your browser. A different perspective.",
+      "words": 5,
+      "chars": 38,
+      "lines": 2,
+      "size": 33,
+      "vw": 8.5,
+      "font": "Inter",
+      "weight": 550,
+      "tracking": -0.042,
+      "leading": 1.16,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.91,
+      "top": 1181,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "The real CSS. Right in front of you.",
+      "words": 8,
+      "chars": 36,
+      "lines": 2,
+      "size": 26.5,
+      "vw": 6.8,
+      "font": "Inter",
+      "weight": 550,
+      "tracking": -0.041,
+      "leading": 1.14,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.81,
+      "top": 1528,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Capture what screenshots can’t.",
+      "words": 4,
+      "chars": 31,
+      "lines": 2,
+      "size": 34.3,
+      "vw": 8.8,
+      "font": "Inter",
+      "weight": 550,
+      "tracking": -0.041,
+      "leading": 1.16,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.91,
+      "top": 2278,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "MAKE MAKE",
+      "words": 2,
+      "chars": 9,
+      "lines": 1,
+      "size": 47,
+      "vw": 12.1,
+      "font": "Inter",
+      "weight": 800,
+      "tracking": -0.085,
+      "leading": 0.83,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.68,
+      "top": 2651,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "IT IT IT",
+      "words": 3,
+      "chars": 8,
+      "lines": 1,
+      "size": 47,
+      "vw": 12.1,
+      "font": "Inter",
+      "weight": 800,
+      "tracking": -0.085,
+      "leading": 0.83,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.36,
+      "top": 2690,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "MOVE. MOVE.",
+      "words": 2,
+      "chars": 11,
+      "lines": 1,
+      "size": 47,
+      "vw": 12.1,
+      "font": "Inter",
+      "weight": 800,
+      "tracking": -0.085,
+      "leading": 0.83,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.74,
+      "top": 2729,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "From a moment to a starting point.",
+      "words": 7,
+      "chars": 34,
+      "lines": 2,
+      "size": 33,
+      "vw": 8.5,
+      "font": "Inter",
+      "weight": 550,
+      "tracking": -0.042,
+      "leading": 1.16,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.91,
+      "top": 3078,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "For the naturally curious builder.",
+      "words": 5,
+      "chars": 34,
+      "lines": 2,
+      "size": 33,
+      "vw": 8.5,
+      "font": "Inter",
+      "weight": 550,
+      "tracking": -0.042,
+      "leading": 1.16,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.91,
+      "top": 4613,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "A little more clarity.",
+      "words": 4,
+      "chars": 22,
+      "lines": 1,
+      "size": 32,
+      "vw": 8.2,
+      "font": "Inter",
+      "weight": 550,
+      "tracking": -0.044,
+      "leading": 1.16,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.91,
+      "top": 5499,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Make every interface an inspiration.",
+      "words": 5,
+      "chars": 36,
+      "lines": 2,
+      "size": 30,
+      "vw": 7.7,
+      "font": "Inter",
+      "weight": 550,
+      "tracking": -0.053,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.82,
+      "top": 6486,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 14,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 3,
+     "centered": 2,
+     "medianWords": 4,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Inter",
+       "share": 0.89,
+       "mono": false
+      },
+      {
+       "family": "Consolas",
+       "share": 0.11,
+       "mono": true
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      18,
+      21,
+      23,
+      30,
+      32,
+      33,
+      34,
+      49
+     ],
+     "sizeCount": 17,
+     "notLoaded": [
+      "Consolas"
+     ],
+     "body": {
+      "font": "Inter",
+      "size": 16,
+      "leading": 1.9,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 5.3
+     },
+     "measureChars": 44,
+     "max": {
+      "size": 49,
+      "vw": 12.6,
+      "font": "Inter",
+      "text": "See beyond the pixels."
+     },
+     "monoShare": 0.11,
+     "monoProseShare": 0.01,
+     "monoFamilies": [
+      "Consolas"
+     ],
+     "monoSamples": [
+      "button.primary",
+      "124 × 35",
+      "button.heading",
+      "221 × 27",
+      "HTML"
+     ],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.01,
+     "centerShare": 0.1,
+     "smallText": 24
+    },
+    "eyebrows": [
+     {
+      "text": "A new perspective. Now in motion.",
+      "above": "See beyond the pixels.",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 10,
+      "top": 106
+     },
+     {
+      "text": "New in 0.2.0",
+      "above": "Capture what screenshots can’t.",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 11,
+      "top": 2249
+     }
+    ],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#ffffff",
+     "bodyBgHsl": {
+      "h": 0,
+      "s": 0,
+      "l": 1
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#ffffff",
+       "top": 467,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 1
+       }
+      },
+      {
+       "color": "#fbfaf7",
+       "top": 499,
+       "hsl": {
+        "h": 45,
+        "s": 0.33,
+        "l": 0.98
+       }
+      },
+      {
+       "color": "#f8f9fb",
+       "top": 1466,
+       "hsl": {
+        "h": 220,
+        "s": 0.27,
+        "l": 0.98
+       }
+      },
+      {
+       "color": "#101929",
+       "top": 2205,
+       "hsl": {
+        "h": 218,
+        "s": 0.44,
+        "l": 0.11
+       }
+      },
+      {
+       "color": "#172235",
+       "top": 2514,
+       "hsl": {
+        "h": 218,
+        "s": 0.39,
+        "l": 0.15
+       }
+      },
+      {
+       "color": "#f9fafc",
+       "top": 3892,
+       "hsl": {
+        "h": 220,
+        "s": 0.33,
+        "l": 0.98
+       }
+      },
+      {
+       "color": "#f6f8ff",
+       "top": 6378,
+       "hsl": {
+        "h": 227,
+        "s": 1,
+        "l": 0.98
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#606978",
+       "share": 0.34
+      },
+      {
+       "color": "#69707d",
+       "share": 0.24
+      },
+      {
+       "color": "#15171c",
+       "share": 0.12
+      },
+      {
+       "color": "#576b9a",
+       "share": 0.11
+      },
+      {
+       "color": "#b2bed3",
+       "share": 0.03
+      }
+     ],
+     "button": {
+      "bg": "#ffffff",
+      "hsl": {
+       "h": 0,
+       "s": 0,
+       "l": 1
+      },
+      "fg": "#ffffff"
+     },
+     "lowContrast": [
+      {
+       "text": "Bring your thoughts, projects, and possi",
+       "ratio": 4.4,
+       "need": 4.5,
+       "size": 8,
+       "fg": "#6f776e",
+       "bg": "#fbfaf7"
+      },
+      {
+       "text": "/ 00:30",
+       "ratio": 4.4,
+       "need": 4.5,
+       "size": 8,
+       "fg": "#7b8aa4",
+       "bg": "#18243a"
+      }
+     ]
+    },
+    "buttons": {
+     "count": 14,
+     "inHero": 5,
+     "radius": 6,
+     "height": 34,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Skip to content",
+      "Get the preview",
+      "Get the preview",
+      "Watch demo",
+      "Find your focus ↗"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 3,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 10,
+     "hairlineSamples": [
+      "article.reveal-ready.revealed 354px",
+      "article.reveal-ready.revealed 354px",
+      "details 354px",
+      "details 354px",
+      "details 354px"
+     ],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 7,
+     "boxRadius": 9,
+     "squareMedia": 0,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [],
+    "nav": {
+     "links": 1,
+     "fixed": false,
+     "height": 70,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "inter"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "pageH": 6883,
+    "margins": {
+     "left": 18,
+     "right": 19
+    },
+    "sections": [
+     {
+      "sel": "section.hero.wrap",
+      "tag": "section",
+      "top": 70,
+      "height": 1029,
+      "words": 125,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "See beyond the pixels.",
+       "size": 49,
+       "tag": "h1"
+      },
+      "left": 29,
+      "right": 36,
+      "textLeft": 29,
+      "textRight": 36,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#features.features.wrap",
+      "tag": "section",
+      "top": 1181,
+      "height": 941,
+      "words": 138,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Your browser.",
+       "size": 33,
+       "tag": "h2"
+      },
+      "left": 18,
+      "right": 18,
+      "textLeft": 18,
+      "textRight": 31,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#motion.motion-section.section-space",
+      "tag": "section",
+      "top": 2205,
+      "height": 791,
+      "words": 110,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "MAKE",
+       "size": 47,
+       "tag": "span"
+      },
+      "left": 18,
+      "right": 27,
+      "textLeft": 18,
+      "textRight": 27,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.section-heading.reveal-ready",
+      "tag": "div",
+      "top": 3078,
+      "height": 178,
+      "words": 26,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "From a moment",
+       "size": 33,
+       "tag": "h2"
+      },
+      "left": 18,
+      "right": 53,
+      "textLeft": 18,
+      "textRight": 53,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "ol.workflow-steps.reveal-ready",
+      "tag": "ol",
+      "top": 3286,
+      "height": 128,
+      "words": 22,
+      "media": 0,
+      "middle": 58,
+      "heading": null,
+      "left": 46,
+      "right": 23,
+      "textLeft": 46,
+      "textRight": 23,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.code-workbench.reveal-ready",
+      "tag": "div",
+      "top": 3444,
+      "height": 988,
+      "words": 196,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "What the motion tells us",
+       "size": 12,
+       "tag": "h3"
+      },
+      "left": 35,
+      "right": 19,
+      "textLeft": 39,
+      "textRight": 19,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.use-cases.section-space",
+      "tag": "section",
+      "top": 4570,
+      "height": 848,
+      "words": 85,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "For the naturally",
+       "size": 33,
+       "tag": "h2"
+      },
+      "left": 18,
+      "right": 42,
+      "textLeft": 18,
+      "textRight": 42,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#faq.faq.wrap",
+      "tag": "section",
+      "top": 5499,
+      "height": 797,
+      "words": 240,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "A little more clarity.",
+       "size": 32,
+       "tag": "h2"
+      },
+      "left": 18,
+      "right": 35,
+      "textLeft": 18,
+      "textRight": 35,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.final-cta.wrap",
+      "tag": "section",
+      "top": 6378,
+      "height": 385,
+      "words": 25,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Make every interface",
+       "size": 30,
+       "tag": "h2"
+      },
+      "left": 59,
+      "right": 59,
+      "textLeft": 59,
+      "textRight": 59,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.footer.wrap",
+      "tag": "footer",
+      "top": 6763,
+      "height": 120,
+      "words": 8,
+      "media": 0,
+      "middle": 84,
+      "heading": null,
+      "left": 50,
+      "right": 18,
+      "textLeft": 50,
+      "textRight": 18,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "See beyond the pixels.",
+      "size": 49,
+      "top": 144,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 18,
+      "n": 22
+     }
+    ],
+    "leftBlocks": 22,
+    "bodySize": 16,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "WARN",
+   "id": "palette-cream",
+   "width": 1440,
+   "message": "Yellow-cream background (section #fbfaf7).",
+   "fix": "Use the drawn palette. If you want warmth, take a low-chroma stone or bone, not a yellow cream.",
+   "alsoAt": [
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "contrast",
+   "width": 1440,
+   "message": "Low-contrast text: \"Bring your thoughts, projects, and possi\" 4.4:1 needs 4.5:1; \"/ 00:30\" 4.4:1 needs 4.5:1",
+   "fix": "Darken or lighten the text colour.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "font-fallback",
+   "width": 1440,
+   "message": "Typeface(s) declared but not loaded, so a fallback is rendering: Consolas",
+   "fix": "Fix the font URL / family name, or the screenshots you are judging are not the design.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "size-count",
+   "width": 1440,
+   "message": "17 different font sizes (9, 10, 11, 12, 14, 15, 16, 18, 19, 20, 25, 27, 36, 43, 47, 52, 79).",
+   "fix": "A page needs about five: display, heading, lead, body, small.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "grey-body",
+   "width": 1440,
+   "message": "The running text is a soft grey on its ground (5:1).",
+   "fix": "Set body copy in the full ink (7:1 or more). Keep the muted ink for secondary notes; pages read thin and unfinished when everything is grey.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "no-real-pictures",
+   "width": 1440,
+   "message": "Only 0 real photograph(s) or clip(s); the rest are interface fragments.",
+   "fix": "Add two or more real pictures of the customer's world from scripts/assets.mjs, not stock of people at laptops."
+  },
+  {
+   "level": "WARN",
+   "id": "no-footage",
+   "width": 1440,
+   "message": "No video anywhere on the page.",
+   "fix": "Look for one honest clip with scripts/assets.mjs --video (the place, the material, the process) and use it as a muted loop with a poster frame. Defend its absence only if no clip fits the subject."
+  },
+  {
+   "level": "WARN",
+   "id": "still-page",
+   "width": 1440,
+   "message": "Little motion: 15 element(s) moved while the page loaded and scrolled.",
+   "fix": "Give every section an entrance for its parts (not one fade of the whole block) and add one moving picture: a looping clip or a slow move on a photograph."
+  },
+  {
+   "level": "WARN",
+   "id": "body-size",
+   "width": 768,
+   "message": "Body text is 15px.",
+   "fix": "Body copy 16–20px."
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "D:\\vclarity landing page\\.taste-skill\\production\\desktop-fold.jpg",
+   "pages": [
+    "D:\\vclarity landing page\\.taste-skill\\production\\desktop-page-01.jpg",
+    "D:\\vclarity landing page\\.taste-skill\\production\\desktop-page-02.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "tablet",
+   "width": 768,
+   "fold": "D:\\vclarity landing page\\.taste-skill\\production\\tablet-fold.jpg",
+   "pages": [
+    "D:\\vclarity landing page\\.taste-skill\\production\\tablet-page-01.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "D:\\vclarity landing page\\.taste-skill\\production\\mobile-fold.jpg",
+   "pages": [
+    "D:\\vclarity landing page\\.taste-skill\\production\\mobile-page-01.jpg",
+    "D:\\vclarity landing page\\.taste-skill\\production\\mobile-page-02.jpg"
+   ],
+   "film": []
+  }
+ ]
+}
