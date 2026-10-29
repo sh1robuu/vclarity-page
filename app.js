@@ -41,17 +41,62 @@
   // Native dialog supplies a focus trap, Escape handling, and accessible modality.
   const dialog = $('#preview-dialog');
   let previewTrigger;
+  let pageScrollLock;
+  function lockPageScroll() {
+    if (pageScrollLock) return;
+    const root = document.documentElement;
+    const body = document.body;
+    const scrollbarWidth = Math.max(0, innerWidth - root.clientWidth);
+    const paddingRight = parseFloat(getComputedStyle(body).paddingRight) || 0;
+    pageScrollLock = {
+      x: scrollX, y: scrollY,
+      rootStyle: root.getAttribute('style'),
+      bodyStyle: body.getAttribute('style'),
+    };
+    root.style.overflow = 'hidden';
+    body.style.overflow = 'hidden';
+    if (scrollbarWidth) body.style.paddingRight = `${paddingRight + scrollbarWidth}px`;
+  }
+  function unlockPageScroll() {
+    if (!pageScrollLock) return;
+    const saved = pageScrollLock;
+    pageScrollLock = null;
+    for (const [element, style] of [[document.documentElement, saved.rootStyle], [document.body, saved.bodyStyle]]) {
+      if (style === null) element.removeAttribute('style');
+      else element.setAttribute('style', style);
+    }
+    window.scrollTo({ left: saved.x, top: saved.y, behavior: 'instant' });
+  }
+  function restorePreviewPage() {
+    // A queued close event from an earlier cycle must not unlock a newly opened dialog.
+    if (dialog.open) return;
+    unlockPageScroll();
+    const trigger = previewTrigger;
+    previewTrigger = null;
+    trigger?.focus({ preventScroll: true });
+  }
+  function closePreview() {
+    dialog.close();
+    restorePreviewPage();
+  }
   $$('[data-open-preview]').forEach((button) => button.addEventListener('click', () => {
+    if (dialog.open) return;
     previewTrigger = button;
-    dialog.showModal();
+    lockPageScroll();
+    try { dialog.showModal(); }
+    catch (error) { unlockPageScroll(); throw error; }
   }));
-  $('.dialog-close').addEventListener('click', () => dialog.close());
+  $('.dialog-close').addEventListener('click', closePreview);
   dialog.addEventListener('click', (event) => {
     if (event.target !== dialog) return;
     const box = dialog.getBoundingClientRect();
-    if (event.clientX < box.left || event.clientX > box.right || event.clientY < box.top || event.clientY > box.bottom) dialog.close();
+    if (event.clientX < box.left || event.clientX > box.right || event.clientY < box.top || event.clientY > box.bottom) closePreview();
   });
-  dialog.addEventListener('close', () => previewTrigger?.focus({ preventScroll: true }));
+  dialog.addEventListener('cancel', (event) => {
+    event.preventDefault();
+    closePreview();
+  });
+  dialog.addEventListener('close', restorePreviewPage);
 
   const menuButton = $('.menu-toggle');
   const navigation = $('#navigation');
@@ -60,7 +105,11 @@
     menuButton.setAttribute('aria-expanded', String(open));
     menuButton.setAttribute('aria-label', open ? 'Close navigation' : 'Open navigation');
   }
-  menuButton.addEventListener('click', () => setMenu(menuButton.getAttribute('aria-expanded') !== 'true'));
+  menuButton.addEventListener('click', (event) => {
+    const open = menuButton.getAttribute('aria-expanded') !== 'true';
+    setMenu(open);
+    if (open && event.detail === 0) $('a', navigation)?.focus();
+  });
   $$('a', navigation).forEach((link) => link.addEventListener('click', () => setMenu(false)));
   document.addEventListener('click', (event) => { if (!event.target.closest('.nav')) setMenu(false); });
   document.addEventListener('keydown', (event) => {
@@ -227,30 +276,56 @@
     activateFeature(featureTabs[0], false);
     featureTabs[0].focus({ preventScroll: true });
   });
+  $$('[data-feature-link]').forEach((link) => link.addEventListener('click', (event) => {
+    if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+    const tab = featureTabs.find((candidate) => candidate.dataset.mode === link.dataset.featureLink);
+    if (!tab) return;
+    event.preventDefault();
+    activateFeature(tab);
+    if (location.hash !== '#features') history.pushState(null, '', link.getAttribute('href'));
+    $('#features').scrollIntoView({ behavior: reducedMotion.matches ? 'instant' : 'smooth', block: 'start' });
+    tab.focus({ preventScroll: true });
+    // Modified clicks and the no-script href retain ordinary anchor navigation.
+  }));
 
   // Recording is a demonstrator state machine, never a MediaRecorder session.
   const motionDemo = $('.motion-demo');
   const recordButton = $('#record-button');
-  const recordModeButtons = $$('[data-record-mode]');
+  const recordToggle = $('#record-toggle');
+  const recordModeButtons = $$('button[data-record-mode]');
   let recordingMode = 'region';
   let recording = false;
+  let recordingInput = null;
   let recordingStarted = 0;
   let recordingInterval;
-  let finishTimeout;
+  let finishTimeout = null;
   let heldPointer = null;
   let heldKey = null;
   function renderTimer(milliseconds) {
     const seconds = Math.min(30, Math.floor(milliseconds / 1000));
     $('#record-timer').innerHTML = `00:${String(seconds).padStart(2, '0')} <span>/ 00:30</span>`;
   }
-  function resetRecording() {
+  function clearRecordingTimers() {
     clearInterval(recordingInterval);
     clearTimeout(finishTimeout);
+    finishTimeout = null;
+  }
+  function syncRecordingControls() {
+    const region = recordingMode === 'region';
+    recordButton.disabled = region && recording && recordingInput === 'toggle';
+    recordButton.setAttribute('aria-pressed', String(recording));
+    recordToggle.hidden = !region;
+    recordToggle.setAttribute('aria-pressed', String(region && recording));
+    $('#record-toggle-label').textContent = region && recording ? 'Stop demo' : 'Start demo';
+  }
+  function resetRecording() {
+    clearRecordingTimers();
     recording = false;
+    recordingInput = null;
     heldPointer = null;
     heldKey = null;
     motionDemo.classList.remove('is-recording');
-    recordButton.setAttribute('aria-pressed', 'false');
+    syncRecordingControls();
     renderTimer(0);
     $('#record-state').textContent = 'Ready to capture';
     $('#record-button-label').textContent = recordingMode === 'region' ? 'Hold to try' : 'Start recording';
@@ -258,13 +333,13 @@
   function finishRecording(reason = 'released') {
     if (!recording) return;
     const elapsed = Math.min(30000, performance.now() - recordingStarted);
-    clearInterval(recordingInterval);
-    clearTimeout(finishTimeout);
+    clearRecordingTimers();
     recording = false;
+    recordingInput = null;
     heldPointer = null;
     heldKey = null;
     motionDemo.classList.remove('is-recording');
-    recordButton.setAttribute('aria-pressed', 'false');
+    syncRecordingControls();
     renderTimer(reason === 'limit' ? 30000 : elapsed);
     $('#record-state').textContent = reason === 'limit' ? '30s limit reached' : 'Demo capture complete';
     $('#record-button-label').textContent = recordingMode === 'region' ? 'Hold to retry' : 'Record again';
@@ -275,20 +350,25 @@
     const remaining = 100 - (performance.now() - recordingStarted);
     if (remaining > 0 && reason === 'released') {
       clearTimeout(finishTimeout);
-      finishTimeout = setTimeout(() => finishRecording(reason), remaining);
+      finishTimeout = setTimeout(() => {
+        finishTimeout = null;
+        finishRecording(reason);
+      }, remaining);
     } else finishRecording(reason);
   }
-  function startRecording() {
-    if (recording) return;
-    clearTimeout(finishTimeout);
+  function startRecording(input = recordingMode === 'region' ? 'hold' : 'tab') {
+    // A fresh hold can begin before the minimum-duration stop callback fires.
+    if (recording && finishTimeout === null) return;
+    clearRecordingTimers();
     recording = true;
+    recordingInput = input;
     recordingStarted = performance.now();
     motionDemo.classList.add('is-recording');
-    recordButton.setAttribute('aria-pressed', 'true');
+    syncRecordingControls();
     $('#record-state').textContent = 'Recording demo';
-    $('#record-button-label').textContent = recordingMode === 'region' ? 'Release to stop' : 'Stop recording';
+    $('#record-button-label').textContent = recordingMode === 'region' ? input === 'toggle' ? 'Hold to try' : 'Release to stop' : 'Stop recording';
     renderTimer(0);
-    announce(`${recordingMode === 'region' ? 'Region' : 'Tab'} recording demo started. ${recordingMode === 'region' ? 'Release to stop.' : 'Press Stop recording to finish.'} This is an illustrative demo only.`);
+    announce(`${recordingMode === 'region' ? 'Region' : 'Tab'} recording demo started. ${recordingMode === 'region' ? input === 'toggle' ? 'Press Stop demo to finish.' : 'Release or press Stop demo to finish.' : 'Press Stop recording to finish.'} This is an illustrative demo only.`);
     recordingInterval = setInterval(() => {
       const elapsed = performance.now() - recordingStarted;
       renderTimer(elapsed);
@@ -305,14 +385,15 @@
       mode.setAttribute('aria-pressed', String(active));
     });
     $('#record-instruction').textContent = recordingMode === 'region' ? 'Draw. Hold steady. Release.' : 'Your tab. Every interaction.';
-    $('#record-help').textContent = recordingMode === 'region' ? 'Hold the button, Space, or Enter; release to stop.' : 'Start the demo, then press Stop to finish. 30 seconds maximum.';
+    $('#record-help').textContent = recordingMode === 'region' ? 'Hold the button, Space, or Enter; release to stop. Or use Start demo.' : 'Start the demo, then press Stop to finish. 30 seconds maximum.';
     announce(`${recordingMode === 'region' ? 'Hold region' : 'Record tab'} selected.`);
   }));
   recordButton.setAttribute('aria-describedby', 'record-help');
-  recordButton.setAttribute('aria-pressed', 'false');
-  $('#record-help').textContent = 'Hold the button, Space, or Enter; release to stop.';
+  recordToggle.setAttribute('aria-describedby', 'record-help');
+  syncRecordingControls();
+  $('#record-help').textContent = 'Hold the button, Space, or Enter; release to stop. Or use Start demo.';
   recordButton.addEventListener('pointerdown', (event) => {
-    if (recordingMode !== 'region' || (event.pointerType === 'mouse' && event.button !== 0)) return;
+    if (recordButton.disabled || recordingMode !== 'region' || (event.pointerType === 'mouse' && event.button !== 0)) return;
     event.preventDefault();
     recordButton.focus({ preventScroll: true });
     heldPointer = event.pointerId;
@@ -326,17 +407,23 @@
   recordButton.addEventListener('pointercancel', releasePointer);
   recordButton.addEventListener('lostpointercapture', releasePointer);
   recordButton.addEventListener('keydown', (event) => {
-    if (recordingMode !== 'region' || ![' ', 'Enter'].includes(event.key)) return;
+    if (recordButton.disabled || recordingMode !== 'region' || ![' ', 'Enter'].includes(event.key)) return;
     event.preventDefault();
     if (!event.repeat && heldKey === null) { heldKey = event.key; startRecording(); }
   });
   recordButton.addEventListener('keyup', (event) => {
     if (recordingMode !== 'region' || event.key !== heldKey) return;
     event.preventDefault();
+    heldKey = null;
     stopRecording();
   });
-  recordButton.addEventListener('blur', () => { if (recordingMode === 'region') stopRecording('blur'); });
+  recordButton.addEventListener('blur', () => { if (recordingMode === 'region' && recordingInput === 'hold') stopRecording('blur'); });
   recordButton.addEventListener('click', () => { if (recordingMode === 'tab') recording ? stopRecording() : startRecording(); });
+  recordToggle.addEventListener('click', () => {
+    if (recordingMode !== 'region') return;
+    if (recording) stopRecording('toggle');
+    else startRecording('toggle');
+  });
   document.addEventListener('visibilitychange', () => { if (document.hidden) stopRecording('hidden'); });
   window.addEventListener('blur', () => { if (recordingMode === 'region') stopRecording('blur'); });
 
@@ -536,6 +623,9 @@ document.querySelectorAll('.motion-study').forEach((study) => {
     }
   });
   window.addEventListener('pagehide', () => {
+    previewTrigger = null;
+    if (dialog.open) dialog.close();
+    unlockPageScroll();
     stopRecording('hidden');
     clearTimeout(toastTimeout);
     clearTimeout(featureTimeout);

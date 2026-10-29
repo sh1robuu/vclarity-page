@@ -68,3 +68,35 @@ Top three problems addressed:
 Remaining limitation: the tiny type inside miniature webpage specimens is intentionally scaled, especially on phones. Main reading copy and functional controls are separate from those decorative website details. AI sequences use prepared example content. Before public hosting, set the real origin for social metadata and replace the preview CTA only when a verified store listing exists.
 
 No third-party stock pictures or generated bitmap artwork were used. Authentic Vclarity assets and Inter's OFL license are bundled; fictional Layers/Folio specimen content is labeled illustrative and requires no customer approval or testimonial substitution.
+
+## Approved P1 follow-up
+
+The six audited P1 issues are addressed without changing the page architecture or brand direction:
+
+- Live result overlays pass pointer events through only in Live mode, including initial load. The Video result link remains interactive.
+- Corrected malformed `button:disabled` and `button:focus-visible` selectors; keyboard controls receive the intended 3px blue focus outline. Code tab outlines sit inside their toolbar to avoid clipping.
+- Keyboard or assistive activation of the mobile menu enters the first navigation link; forward Tab and Escape preserve the expected order and focus return.
+- Functional demo labels, timer, instructions, file tabs, copy/export actions, and AI disclosure use a minimum 12px size at all tested widths. The recording timer denominator now measures 7.77:1 contrast.
+- Region capture retains pointer/Space/Enter hold behavior and adds a semantic Start/Stop demo button. Pressed/disabled states, mode resets, 30-second limits, and rapid keyboard retries are covered by regression tests.
+- The developer-preview modal explains before download that Live Inspect/local Ghost palette extraction work immediately, while AI analysis and recording require the separately configured API/provider and consent.
+
+Validation on the production build: **17/17 P1 regression groups and 20/20 existing regression groups pass**. Viewports: 1440, 1024, 768, 390, and 320px. No page overflow, clipped tested controls, or console/page/resource errors were found. `npm run check`, `npm run build`, and `git diff --check` pass. The design inspector reports 0 FAIL with the same documented brand allowances; remaining warnings concern preserved specimen styling and general gallery preferences. Full test evidence is in `qa/p1-results.json`.
+
+The P2 modal background-scroll behavior, use-case link styling, public-origin metadata, and broader CSS consolidation remain deferred as agreed. No extension implementation or runtime dependency changed.
+
+## Approved P2 follow-up — 2026-10-29
+
+All four deferred P2 refinements are now implemented:
+
+- The native preview dialog locks background scrolling, compensates for the scrollbar gutter, preserves prior inline document styles, and restores the opening scroll position and focus. Escape, Close, backdrop, repeated cycles, a short mobile viewport, and navigation to the guide then Browser Back are verified. Cleanup is synchronous for UI close actions; a queued old close event cannot unlock a newly reopened dialog.
+- The three use-case labels are real anchors. Ordinary pointer/keyboard activation selects the matching Live/Ghost/Video tab, brings it into view, and focuses it. Modified clicks keep native anchor behavior; without JavaScript, their fragment destination remains usable. Link hit areas are 24px high.
+- Build-time metadata uses explicit `SITE_URL`, then Vercel's stable `VERCEL_PROJECT_PRODUCTION_URL`, and finally the user-confirmed `https://vclarity.vercel.app/` default to emit absolute canonical, `og:url`, `og:image`, and `twitter:image`. Generated preview hostnames are not canonical fallbacks. Invalid origins fail before modifying output. Local builds also use the confirmed public origin. Deployment configuration and the system-environment-variable prerequisite are documented in README.
+- The feature-description selector was reduced from twelve declarations to four (base plus three breakpoints). Three immediately adjacent duplicate CSS blocks were combined. This is a narrow cleanup, not a global stylesheet rewrite.
+
+Measured P1-to-P2 comparison at 1440/1024/768/390/320px confirms unchanged feature-description font, line-height, color, max-width, margin, and feature-section geometry. The only measured section-size difference is the use-case list becoming 14.44px taller in total from its three improved link hit areas; following sections shift by the same amount. The white-blue identity, typography hierarchy, hero, navy feature stage, and section composition are preserved.
+
+Final production validation: **17/17 P2 groups, 17/17 P1 groups, and 20/20 original groups pass — 54 browser groups total**. No console/page/resource errors or document overflow. Metadata pure and isolated real-build tests pass, including explicit-origin precedence, generated absolute URLs, local fallback, copied assets, and unchanged output after invalid configuration. The design inspector remains at 0 FAIL with the same recorded brand allowances and existing specimen/style warnings. Full evidence is in `qa/p2-results.json`; screenshots are under `qa/screenshots/p2-*` and `.taste-skill/inspect/p2/`.
+
+After the public URL was confirmed, the build was checked again with `https://vclarity.vercel.app/` as its default. All 17 P2 groups and metadata build tests pass; the public page and social image both return HTTP 200. The browser suite now waits for smooth scrolling to settle between successive automated use-case clicks, preventing the next Playwright scroll from interrupting an unfinished animation. No application behavior changed for that test synchronization fix.
+
+Final visual review: the composition and visual hierarchy remain unchanged; functional links gain hover/focus feedback, and the short-screen modal keeps its download control reachable. Broader CSS reorganization and unrelated aesthetic changes were deliberately excluded. No runtime library, extension-source change, guessed production domain, or external deployment was introduced.

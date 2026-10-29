@@ -52,7 +52,7 @@ a {
   color: inherit;
   text-decoration: none
 }
-button: disabled {
+button:disabled {
   cursor: default
 }
 button {
@@ -61,7 +61,7 @@ button {
 button,a,summary {
   touch-action: manipulation
 }
-button: focus-visible,a:focus-visible,summary:focus-visible,[tabindex]:focus-visible {
+button:focus-visible,a:focus-visible,summary:focus-visible,[tabindex]:focus-visible {
   outline: 3px solid var(--blue);
   outline-offset: 5px
 }
@@ -866,10 +866,10 @@ h2 {
   margin-top: 13px
 }
 .feature-story>p:not(.interaction-hint) {
-  font-size: 12px;
-  line-height: 1.9;
+  font-size: 16px;
+  line-height: 1.85;
   color: var(--muted);
-  max-width: 280px;
+  max-width: 310px;
   margin-top: 17px
 }
 .feature-proof {
@@ -1079,6 +1079,9 @@ h2 {
   min-width: 225px;
   transition: transform .25s
 }
+.feature-stage[data-active="live"] .feature-result {
+  pointer-events: none;
+}
 .result-heading {
   display: flex;
   align-items: center;
@@ -1121,11 +1124,13 @@ h2 {
   align-items: center;
   gap: 12px;
   min-height: 34px;
-  font-size: 7px;
-  color: #9298a5
+  font-size: 12px;
+  color: #9298a5;
+  flex-wrap: wrap;
 }
 .feature-demo-controls .text-button {
-  font-size: 7px
+  min-height: 36px;
+  font-size: 12px
 }
 .feature-demo-controls .icon {
   width: 10px;
@@ -1255,7 +1260,7 @@ h2 {
   display: flex;
   align-items: center;
   gap: 8px;
-  font-size: 10px;
+  font-size: 12px;
   background: none;
   border: 1px solid transparent;
   color: #8493ad;
@@ -1276,7 +1281,7 @@ h2 {
   color: white
 }
 .record-limit {
-  font-size: 9px;
+  font-size: 12px;
   color: #8391a9;
   display: flex;
   align-items: center;
@@ -1421,7 +1426,7 @@ h2 {
   display: flex;
   align-items: center;
   gap: 7px;
-  font-size: 9px;
+  font-size: 12px;
   background: #18243a;
   border: 1px solid #33435c;
   border-radius: 25px;
@@ -1439,10 +1444,10 @@ h2 {
   font-variant-numeric: tabular-nums;
   margin-left: 10px;
   color: #d8e0ed;
-  font-size: 9px
+  font-size: 12px
 }
 .record-timer>span {
-  color: #7b8aa4
+  color: var(--navy-muted)
 }
 .record-bottom {
   display: flex;
@@ -1458,12 +1463,12 @@ h2 {
   gap: 2px
 }
 .record-bottom strong {
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 500;
   color: #cfd8e9
 }
 .record-bottom>div>span {
-  font-size: 9px;
+  font-size: 12px;
   color: #7688a6
 }
 .record-button {
@@ -1476,7 +1481,7 @@ h2 {
   background: #f2f5fc;
   border: 0;
   color: #26354d;
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 550;
   min-width: 117px;
   user-select: none;
@@ -1491,6 +1496,31 @@ h2 {
   height: 6px;
   border-radius: 50%;
   background: #ef6e75
+}
+.record-bottom>.record-actions {
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+.record-toggle {
+  min-height: 40px;
+  min-width: 115px;
+  padding: 8px 13px;
+  border: 1px solid #7385a3;
+  border-radius: 5px;
+  background: transparent;
+  color: #f4f6ff;
+  font-size: 12px;
+  font-weight: 550;
+  transition: background .2s,border-color .2s;
+}
+.record-toggle:hover,.record-toggle[aria-pressed="true"] {
+  background: #26344c;
+  border-color: #a4b2ca;
+}
+.record-button:disabled {
+  opacity: .55;
 }
 .motion-demo.is-recording .record-dot {
   background: #f4797e;
@@ -1588,11 +1618,11 @@ h2 {
   display: flex;
   align-items: center;
   gap: 7px;
-  font-size: 10px
+  font-size: 12px
 }
 .workbench-heading>span {
   margin-left: auto;
-  font-size: 7px;
+  font-size: 12px;
   color: #9a9faa
 }
 .workbench-heading strong {
@@ -1635,7 +1665,7 @@ h2 {
 .capture-file>div:nth-child(2) {
   display: flex;
   flex-direction: column;
-  font-size: 9px;
+  font-size: 12px;
   gap: 3px
 }
 .capture-file strong {
@@ -1674,14 +1704,14 @@ h2 {
 .analysis-status>div {
   display: flex;
   flex-direction: column;
-  font-size: 9px;
+  font-size: 12px;
   gap: 2px
 }
 .analysis-status strong {
   font-weight: 550
 }
 .analysis-status>div>span {
-  font-size: 8px;
+  font-size: 12px;
   color: #9c9fa9
 }
 .motion-observations {
@@ -1694,7 +1724,7 @@ h2 {
   margin-bottom: 12px
 }
 .motion-observations>p {
-  font-size: 8px;
+  font-size: 12px;
   color: #8c94a1;
   display: flex;
   gap: 15px;
@@ -1706,7 +1736,7 @@ h2 {
   color: #515b6c
 }
 .ai-note {
-  font-size: 8px;
+  font-size: 12px;
   line-height: 1.85;
   color: #8b929f;
   margin-top: 16px;
@@ -1714,7 +1744,7 @@ h2 {
 }
 .analysis-panel>.text-button {
   align-self: start;
-  font-size: 8px;
+  font-size: 12px;
   margin-top: auto;
   padding-top: 20px
 }
@@ -1741,7 +1771,7 @@ h2 {
   gap: 16px
 }
 .code-toolbar button {
-  font-size: 8px;
+  font-size: 12px;
   color: #8e96a4;
   white-space: nowrap;
   padding: 0 4px;
@@ -1753,6 +1783,10 @@ h2 {
 .code-toolbar button[aria-selected=true] {
   color: var(--blue);
   border-bottom-color: var(--blue)
+}
+.code-toolbar button:focus-visible {
+  outline-offset: -4px;
+  border-radius: 4px;
 }
 .code-language {
   font: 7px var(--mono);
@@ -1784,7 +1818,11 @@ h2 {
   gap: 10px;
   background: #fcfcfd;
   font-size: 8px;
-  color: #8e97a8
+  color: #8e97a8;
+  flex-wrap: wrap;
+}
+.code-footer>div {
+  margin-left: auto;
 }
 .code-footer>span {
   display: flex;
@@ -1803,7 +1841,7 @@ h2 {
   gap: 13px
 }
 .code-footer .text-button {
-  font-size: 8px
+  font-size: 12px
 }
 .code-footer .icon {
   width: 11px;
@@ -1819,7 +1857,7 @@ h2 {
   border-radius: 4px;
   background: white;
   padding: 4px 7px;
-  font-size: 8px
+  font-size: 12px
 }
 .download-code:hover {
   background: var(--blue-soft)
@@ -1902,7 +1940,7 @@ h2 {
   max-width: 366px;
   margin-top: 10px
 }
-.use-case-list article>span {
+.use-case-link {
   font-size: 9px;
   color: #78859f;
   display: flex;
@@ -1910,8 +1948,17 @@ h2 {
   max-width: 365px;
   margin-top: 12px
 }
-.use-case-list article>span>span {
+.use-case-link>span {
   color: #a5adbd
+}
+.use-case-link {
+  transition: color .18s;
+  min-height: 24px;
+  align-items: center;
+}
+.use-case-link:hover,.use-case-link:focus-visible,
+.use-case-link:hover>span,.use-case-link:focus-visible>span {
+  color: var(--blue);
 }
 .faq {
   display: grid;
@@ -2047,7 +2094,8 @@ h2 {
   max-width: 460px;
   width: calc(100% - 32px);
   color: var(--ink);
-  box-shadow: 0 24px 80px #10192926
+  box-shadow: 0 24px 80px #10192926;
+  overscroll-behavior: contain;
 }
 .preview-dialog::backdrop {
   background: #10192965;
@@ -2126,6 +2174,10 @@ h2 {
   text-align: center;
   margin-top: 20px;
   color: #9aa3b3
+}
+.preview-dialog>.preview-requirements {
+  font-size: 13px;
+  color: #525967;
 }
 .toast {
   position: fixed;
@@ -2240,7 +2292,7 @@ h2 {
     font-size: 28px
   }
   .feature-story>p:not(.interaction-hint) {
-    font-size: 11px
+    font-size: 14px
   }
   .workspace-heading {
     font-size: 21px
@@ -2410,7 +2462,7 @@ h2 {
     height: 17px
   }
   .feature-tabs>button>span:not(.shortcut):not(.new-label) {
-    font-size: 10px
+    font-size: 12px
   }
   .feature-tabs small {
     font-size: 7px
@@ -2428,8 +2480,7 @@ h2 {
     font-size: 25px
   }
   .feature-story>p:not(.interaction-hint) {
-    font-size: 10px;
-    line-height: 1.8
+    font-size: 13px
   }
   .mode-label {
     font-size: 8px
@@ -2511,7 +2562,7 @@ h2 {
     font-size: 7px
   }
   .feature-demo-controls {
-    font-size: 6px
+    font-size: 12px
   }
   .feature-stage[data-active=ghost] .demo-selection {
     top: 80px;
@@ -2621,20 +2672,20 @@ h2 {
     min-height: 338px
   }
   .code-output-wrap pre {
-    font-size: 8px
+    font-size: 12px
   }
   .workbench-heading>span {
-    font-size: 6px
+    font-size: 12px
   }
   .workbench-heading {
-    font-size: 8px
+    font-size: 12px
   }
   .capture-file {
     gap: 8px;
     padding: 7px
   }
   .capture-file>div:nth-child(2) {
-    font-size: 7px
+    font-size: 12px
   }
   .capture-file>div>span {
     font-size: 6px
@@ -2644,23 +2695,23 @@ h2 {
     height: 43px
   }
   .analysis-status>div {
-    font-size: 8px
+    font-size: 12px
   }
   .analysis-status>div>span {
-    font-size: 7px
+    font-size: 12px
   }
   .motion-observations h3 {
     font-size: 9px
   }
   .motion-observations>p {
-    font-size: 7px;
+    font-size: 12px;
     gap: 7px
   }
   .motion-observations>p>span {
     width: 47px
   }
   .ai-note {
-    font-size: 7px
+    font-size: 12px
   }
   .code-footer {
     padding: 10px 12px;
@@ -2670,10 +2721,10 @@ h2 {
     gap: 10px
   }
   .code-footer .text-button {
-    font-size: 7px
+    font-size: 12px
   }
   .download-code {
-    font-size: 7px
+    font-size: 12px
   }
   .use-cases {
     padding: 55px 0
@@ -2708,7 +2759,7 @@ h2 {
   .use-case-list p {
     font-size: 10px
   }
-  .use-case-list article>span {
+  .use-case-link {
     font-size: 8px
   }
   .faq {
@@ -3074,7 +3125,7 @@ h2 {
     height: 17px
   }
   .feature-tabs>button>span:not(.shortcut):not(.new-label) {
-    font-size: 9px
+    font-size: 12px
   }
   .feature-tabs small {
     display: none
@@ -3099,10 +3150,9 @@ h2 {
     line-height: 1.14
   }
   .feature-story>p:not(.interaction-hint) {
-    font-size: 11px;
-    max-width: 300px;
-    margin-top: 13px;
-    line-height: 1.9
+    font-size: 15px;
+    max-width: none;
+    margin-top: 13px
   }
   .feature-proof {
     font-size: 9px;
@@ -3190,13 +3240,13 @@ h2 {
     font-size: 7px
   }
   .feature-demo-controls {
-    font-size: 5.5px;
+    font-size: 12px;
     padding: 7px 9px;
     gap: 7px;
     min-height: 31px
   }
   .feature-demo-controls .text-button {
-    font-size: 6px;
+    font-size: 12px;
     gap: 3px
   }
   .feature-stage[data-active=ghost] .demo-selection {
@@ -3244,7 +3294,7 @@ h2 {
     gap: 3px
   }
   .record-mode-tabs button {
-    font-size: 8px;
+    font-size: 12px;
     padding: 6px 8px;
     gap: 6px
   }
@@ -3253,7 +3303,7 @@ h2 {
     height: 12px
   }
   .record-limit {
-    font-size: 6px;
+    font-size: 12px;
     gap: 5px;
     margin-left: auto
   }
@@ -3328,7 +3378,7 @@ h2 {
     inset: 18px 14px 35px
   }
   .record-status {
-    font-size: 6px;
+    font-size: 12px;
     bottom: 18px;
     gap: 5px;
     padding: 5px 8px
@@ -3338,7 +3388,7 @@ h2 {
     width: 4px
   }
   .record-timer {
-    font-size: 6px;
+    font-size: 12px;
     margin-left: 5px
   }
   .record-bottom {
@@ -3346,15 +3396,15 @@ h2 {
     gap: 10px
   }
   .record-bottom strong {
-    font-size: 8px
+    font-size: 12px
   }
   .record-bottom>div>span {
-    font-size: 6px;
+    font-size: 12px;
     max-width: 172px;
     line-height: 1.6
   }
   .record-button {
-    font-size: 8px;
+    font-size: 12px;
     padding: 7px 10px;
     min-width: 88px;
     gap: 6px;
@@ -3409,10 +3459,10 @@ h2 {
     min-height: 365px
   }
   .workbench-heading {
-    font-size: 11px
+    font-size: 12px
   }
   .workbench-heading>span {
-    font-size: 7px
+    font-size: 12px
   }
   .capture-file {
     margin-top: 20px;
@@ -3420,7 +3470,7 @@ h2 {
     gap: 11px
   }
   .capture-file>div:nth-child(2) {
-    font-size: 9px
+    font-size: 12px
   }
   .capture-file>div>span {
     font-size: 8px
@@ -3433,10 +3483,10 @@ h2 {
     margin-top: 20px
   }
   .analysis-status>div {
-    font-size: 10px
+    font-size: 12px
   }
   .analysis-status>div>span {
-    font-size: 8px
+    font-size: 12px
   }
   .motion-observations {
     margin-top: 22px
@@ -3445,18 +3495,18 @@ h2 {
     font-size: 11px
   }
   .motion-observations>p {
-    font-size: 8px;
+    font-size: 12px;
     gap: 12px
   }
   .motion-observations>p>span {
     width: 52px
   }
   .ai-note {
-    font-size: 8px;
+    font-size: 12px;
     margin-top: 12px
   }
   .analysis-panel>.text-button {
-    font-size: 8px;
+    font-size: 12px;
     padding-top: 14px
   }
   .code-panel {
@@ -3468,7 +3518,7 @@ h2 {
     height: 42px
   }
   .code-toolbar button {
-    font-size: 8px
+    font-size: 12px
   }
   .code-toolbar>div {
     gap: 15px
@@ -3482,7 +3532,7 @@ h2 {
     padding: 20px
   }
   .code-output-wrap pre {
-    font-size: 8px;
+    font-size: 12px;
     line-height: 1.9
   }
   .code-footer {
@@ -3490,10 +3540,10 @@ h2 {
     font-size: 7px
   }
   .code-footer .text-button {
-    font-size: 8px
+    font-size: 12px
   }
   .download-code {
-    font-size: 8px;
+    font-size: 12px;
     padding: 5px 7px
   }
   .workflow-footnote {
@@ -3529,7 +3579,7 @@ h2 {
     font-size: 11px;
     max-width: none
   }
-  .use-case-list article>span {
+  .use-case-link {
     font-size: 9px;
     max-width: none;
     margin-top: 12px
@@ -3688,7 +3738,7 @@ h2 {
   max-width: 470px
 }
 .feature-tabs>button>span:not(.shortcut):not(.new-label) {
-  font-size: 14px
+  font-size: 12px
 }
 .feature-tabs small {
   font-size: 11px;
@@ -3703,11 +3753,6 @@ h2 {
 .mode-label {
   font-size: 12px
 }
-.feature-story>p:not(.interaction-hint) {
-  font-size: 14px;
-  line-height: 1.85;
-  max-width: 310px
-}
 .feature-proof {
   font-size: 12px
 }
@@ -3719,13 +3764,13 @@ h2 {
   transition: transform .25s,opacity .25s
 }
 .feature-demo-controls {
-  font-size: 10px;
+  font-size: 12px;
   color: var(--muted);
   padding: 10px 14px;
   min-height: 40px
 }
 .feature-demo-controls .text-button {
-  font-size: 10px
+  font-size: 12px
 }
 .section-label {
   font-size: 12px
@@ -3739,14 +3784,14 @@ h2 {
   font-size: 12px
 }
 .record-limit {
-  font-size: 11px;
+  font-size: 12px;
   color: #b2bed3
 }
 .record-bottom strong {
-  font-size: 13px
+  font-size: 12px
 }
 .record-bottom>div>span {
-  font-size: 11px;
+  font-size: 12px;
   color: #b2bed3
 }
 .record-button {
@@ -3755,10 +3800,10 @@ h2 {
   min-width: 130px
 }
 .record-status {
-  font-size: 10px
+  font-size: 12px
 }
 .record-timer {
-  font-size: 10px
+  font-size: 12px
 }
 .motion-caption {
   font-size: 11px;
@@ -3791,7 +3836,7 @@ h2 {
   color: var(--muted);
   max-width: 440px
 }
-.use-case-list article>span {
+.use-case-link {
   font-size: 12px;
   color: #5d6e8b;
   max-width: 440px
@@ -3831,51 +3876,51 @@ h2 {
   font-size: 12px
 }
 .workbench-heading>span {
-  font-size: 9px;
+  font-size: 12px;
   color: var(--muted)
 }
 .capture-file>div:nth-child(2) {
-  font-size: 11px
+  font-size: 12px
 }
 .capture-file>div>span {
   font-size: 10px;
   color: var(--muted)
 }
 .analysis-status>div {
-  font-size: 11px
+  font-size: 12px
 }
 .analysis-status>div>span {
-  font-size: 10px;
+  font-size: 12px;
   color: var(--muted)
 }
 .motion-observations h3 {
   font-size: 12px
 }
 .motion-observations>p {
-  font-size: 10px;
+  font-size: 12px;
   color: var(--muted)
 }
 .ai-note {
-  font-size: 10px;
+  font-size: 12px;
   color: var(--muted)
 }
 .analysis-panel>.text-button {
-  font-size: 11px
+  font-size: 12px
 }
 .code-toolbar button {
-  font-size: 11px
+  font-size: 12px
 }
 .code-language {
   font-size: 9px
 }
 .code-output-wrap pre {
-  font-size: 11px
+  font-size: 12px
 }
 .code-footer {
   font-size: 10px
 }
 .code-footer .text-button,.download-code {
-  font-size: 11px
+  font-size: 12px
 }
 .code-footer .icon {
   width: 13px;
@@ -3915,9 +3960,6 @@ h2 {
   .feature-stage {
     min-height: 440px
   }
-  .feature-story>p:not(.interaction-hint) {
-    font-size: 13px
-  }
   .feature-proof {
     font-size: 11px
   }
@@ -3953,13 +3995,10 @@ h2 {
     max-width: 290px
   }
   .feature-tabs>button>span:not(.shortcut):not(.new-label) {
-    font-size: 11px
+    font-size: 12px
   }
   .feature-tabs small {
     font-size: 8px
-  }
-  .feature-story>p:not(.interaction-hint) {
-    font-size: 12px
   }
   .mode-label {
     font-size: 10px
@@ -3971,20 +4010,20 @@ h2 {
     font-size: 10px
   }
   .feature-demo-controls {
-    font-size: 8px
+    font-size: 12px
   }
   .feature-demo-controls .text-button {
-    font-size: 8px
+    font-size: 12px
   }
   .motion-heading p {
     font-size: 12px;
     max-width: 280px
   }
   .record-limit {
-    font-size: 10px
+    font-size: 12px
   }
   .record-bottom>div>span {
-    font-size: 10px
+    font-size: 12px
   }
   .motion-caption {
     font-size: 10px
@@ -4002,28 +4041,28 @@ h2 {
     gap: 7px
   }
   .code-toolbar button {
-    font-size: 9px
+    font-size: 12px
   }
   .workbench-heading {
-    font-size: 10px
+    font-size: 12px
   }
   .workbench-heading>span {
-    font-size: 7px
+    font-size: 12px
   }
   .capture-file>div:nth-child(2) {
-    font-size: 9px
+    font-size: 12px
   }
   .capture-file>div>span {
     font-size: 8px
   }
   .code-output-wrap pre {
-    font-size: 9px
+    font-size: 12px
   }
   .code-footer {
     font-size: 8px
   }
   .code-footer .text-button,.download-code {
-    font-size: 9px
+    font-size: 12px
   }
   .use-case-list h3 {
     font-size: 16px
@@ -4061,14 +4100,10 @@ h2 {
     max-width: none
   }
   .feature-tabs>button>span:not(.shortcut):not(.new-label) {
-    font-size: 10px
+    font-size: 12px
   }
   .feature-stage {
     min-height: 0
-  }
-  .feature-story>p:not(.interaction-hint) {
-    font-size: 14px;
-    max-width: none
   }
   .mode-label {
     font-size: 11px
@@ -4080,11 +4115,11 @@ h2 {
     font-size: 11px
   }
   .feature-demo-controls {
-    font-size: 9px;
+    font-size: 12px;
     flex-wrap: wrap
   }
   .feature-demo-controls .text-button {
-    font-size: 9px
+    font-size: 12px
   }
   .section-label {
     font-size: 11px
@@ -4094,11 +4129,11 @@ h2 {
     max-width: none
   }
   .record-mode-tabs button {
-    font-size: 10px;
+    font-size: 12px;
     padding: 7px
   }
   .record-limit {
-    font-size: 9px
+    font-size: 12px
   }
   .record-limit .icon {
     display: none
@@ -4108,20 +4143,20 @@ h2 {
     gap: 10px
   }
   .record-bottom strong {
-    font-size: 11px
+    font-size: 12px
   }
   .record-bottom>div>span {
-    font-size: 10px;
+    font-size: 12px;
     max-width: 180px
   }
   .record-button {
-    font-size: 10px;
+    font-size: 12px;
     min-width: 100px;
     min-height: 40px;
     padding: 8px
   }
   .record-status,.record-timer {
-    font-size: 8px
+    font-size: 12px
   }
   .motion-caption {
     font-size: 10px;
@@ -4140,25 +4175,25 @@ h2 {
     font-size: 12px
   }
   .workbench-heading>span {
-    font-size: 8px
+    font-size: 12px
   }
   .capture-file>div:nth-child(2) {
-    font-size: 11px
+    font-size: 12px
   }
   .capture-file>div>span {
     font-size: 9px
   }
   .code-toolbar button {
-    font-size: 10px
+    font-size: 12px
   }
   .code-output-wrap pre {
-    font-size: 10px
+    font-size: 12px
   }
   .code-footer {
     font-size: 10px
   }
   .code-footer .text-button,.download-code {
-    font-size: 11px
+    font-size: 12px
   }
   .code-output-wrap {
     min-height: 361px
@@ -4170,7 +4205,7 @@ h2 {
     width: 60px
   }
   .ai-note {
-    font-size: 11px
+    font-size: 12px
   }
   .analysis-panel {
     min-height: 410px
@@ -4187,7 +4222,7 @@ h2 {
   .use-case-list p {
     font-size: 14px
   }
-  .use-case-list article>span {
+  .use-case-link {
     font-size: 12px
   }
   .faq-intro p {
@@ -4246,9 +4281,6 @@ h2 {
   font-size: 16px;
   color: #606978
 }
-.feature-story>p:not(.interaction-hint) {
-  font-size: 16px
-}
 .feature-stage {
   min-height: 465px
 }
@@ -4262,9 +4294,6 @@ h2 {
   font-size: 12px
 }
 @media(max-width:1100px) {
-  .feature-story>p:not(.interaction-hint) {
-    font-size: 14px
-  }
   .motion-heading p {
     font-size: 14px
   }
@@ -4273,9 +4302,6 @@ h2 {
   }
 }
 @media(max-width:800px) {
-  .feature-story>p:not(.interaction-hint) {
-    font-size: 13px
-  }
   .feature-stage {
     min-height: 440px
   }
@@ -4289,9 +4315,6 @@ h2 {
 @media(max-width:600px) {
   .feature-stage {
     min-height: 0
-  }
-  .feature-story>p:not(.interaction-hint) {
-    font-size: 15px
   }
   .motion-heading p {
     font-size: 15px
@@ -4377,5 +4400,21 @@ section[id] {
     min-height: 44px;
     display: flex;
     align-items: center;
+  }
+  .record-bottom {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .record-bottom>div:first-child {
+    width: 100%;
+  }
+  .record-bottom>div>span {
+    max-width: none;
+  }
+  .record-bottom>.record-actions {
+    width: 100%;
+  }
+  .record-actions>button {
+    flex: 1;
   }
 }

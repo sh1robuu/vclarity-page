@@ -1,6 +1,7 @@
 dist/
 .playwright-cli/
 .taste-skill/inspect/
+.taste-skill/p1-verification/
 node_modules/
 qa/screenshots/
 qa/export-check/

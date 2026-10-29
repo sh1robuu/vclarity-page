@@ -1,0 +1,1364 @@
+{
+  "scope": "Four approved P2 refinements; existing design and P1 fixes preserved",
+  "summary": {
+    "p2Passed": 17,
+    "p2Failed": 0,
+    "p1Passed": 17,
+    "p1Failed": 0,
+    "regressionPassed": 20,
+    "regressionFailed": 0,
+    "totalBrowserGroups": 54,
+    "viewports": [
+      1440,
+      1024,
+      768,
+      390,
+      320
+    ],
+    "metadataBuildTests": "Passed: confirmed public default, isolated production URL, explicit override, absolute URLs, asset preservation, and invalid-origin output preservation"
+  },
+  "metadata": {
+    "originPriority": [
+      "SITE_URL",
+      "VERCEL_PROJECT_PRODUCTION_URL",
+      "https://vclarity.vercel.app/"
+    ],
+    "localOriginConfigured": true,
+    "confirmedPublicOrigin": "https://vclarity.vercel.app/",
+    "publicOriginHttpStatus": 200,
+    "publicSocialImageHttpStatus": 200,
+    "generatedPreviewOriginUsed": false,
+    "scrollTestSynchronization": "Wait for 180ms of stable scrolling before the next automated navigation; application behavior unchanged."
+  },
+  "layoutComparison": [
+    {
+      "width": 1440,
+      "selector": ".use-cases",
+      "props": {
+        "height": {
+          "before": 675.46875,
+          "after": 689.90625
+        }
+      }
+    },
+    {
+      "width": 1440,
+      "selector": "#faq",
+      "props": {
+        "y": {
+          "before": 4820.03125,
+          "after": 4834.46875
+        }
+      }
+    },
+    {
+      "width": 1440,
+      "selector": ".final-cta",
+      "props": {
+        "y": {
+          "before": 5638.59375,
+          "after": 5653.03125
+        }
+      }
+    },
+    {
+      "width": 1024,
+      "selector": ".use-cases",
+      "props": {
+        "height": {
+          "before": 675.46875,
+          "after": 689.90625
+        }
+      }
+    },
+    {
+      "width": 1024,
+      "selector": "#faq",
+      "props": {
+        "y": {
+          "before": 4767.546875,
+          "after": 4781.984375
+        }
+      }
+    },
+    {
+      "width": 1024,
+      "selector": ".final-cta",
+      "props": {
+        "y": {
+          "before": 5586.109375,
+          "after": 5600.546875
+        }
+      }
+    },
+    {
+      "width": 768,
+      "selector": ".use-cases",
+      "props": {
+        "height": {
+          "before": 674.84375,
+          "after": 689.28125
+        }
+      }
+    },
+    {
+      "width": 768,
+      "selector": "#faq",
+      "props": {
+        "y": {
+          "before": 4350.96875,
+          "after": 4365.40625
+        }
+      }
+    },
+    {
+      "width": 768,
+      "selector": ".final-cta",
+      "props": {
+        "y": {
+          "before": 5149.34375,
+          "after": 5163.78125
+        }
+      }
+    },
+    {
+      "width": 390,
+      "selector": ".use-cases",
+      "props": {
+        "height": {
+          "before": 847.90625,
+          "after": 862.34375
+        }
+      }
+    },
+    {
+      "width": 390,
+      "selector": "#faq",
+      "props": {
+        "y": {
+          "before": 5588.453125,
+          "after": 5602.890625
+        }
+      }
+    },
+    {
+      "width": 390,
+      "selector": ".final-cta",
+      "props": {
+        "y": {
+          "before": 6467.421875,
+          "after": 6481.859375
+        }
+      }
+    },
+    {
+      "width": 320,
+      "selector": ".use-cases",
+      "props": {
+        "height": {
+          "before": 923.765625,
+          "after": 938.203125
+        }
+      }
+    },
+    {
+      "width": 320,
+      "selector": "#faq",
+      "props": {
+        "y": {
+          "before": 5908.5,
+          "after": 5922.9375
+        }
+      }
+    },
+    {
+      "width": 320,
+      "selector": ".final-cta",
+      "props": {
+        "y": {
+          "before": 6923.421875,
+          "after": 6937.859375
+        }
+      }
+    }
+  ],
+  "p2": {
+    "passed": 17,
+    "failed": 0,
+    "results": [
+      {
+        "name": "Modal locks the background and restores position/focus after Escape",
+        "status": "PASS",
+        "details": {
+          "before": {
+            "x": 0,
+            "y": 0
+          },
+          "after": {
+            "x": 0,
+            "y": 0
+          },
+          "horizontalShift": 0
+        }
+      },
+      {
+        "name": "Modal locks the background and restores position/focus after close button",
+        "status": "PASS",
+        "details": {
+          "before": {
+            "x": 0,
+            "y": 5950
+          },
+          "after": {
+            "x": 0,
+            "y": 5950
+          },
+          "horizontalShift": 0
+        }
+      },
+      {
+        "name": "Modal locks the background and restores position/focus after backdrop",
+        "status": "PASS",
+        "details": {
+          "before": {
+            "x": 0,
+            "y": 5386
+          },
+          "after": {
+            "x": 0,
+            "y": 5386
+          },
+          "horizontalShift": 0
+        }
+      },
+      {
+        "name": "Short mobile modal scrolls internally while its background stays fixed",
+        "status": "PASS",
+        "details": {
+          "scrollHeight": 696,
+          "clientHeight": 460,
+          "internalScroll": 236,
+          "bottom": 236
+        }
+      },
+      {
+        "name": "Repeated modal cycles preserve existing inline document styles",
+        "status": "PASS",
+        "details": null
+      },
+      {
+        "name": "Modal scroll restoration also respects reduced motion",
+        "status": "PASS",
+        "details": null
+      },
+      {
+        "name": "Use-case links activate the matching feature with pointer input",
+        "status": "PASS",
+        "details": [
+          {
+            "mode": "live",
+            "selected": "true"
+          },
+          {
+            "mode": "ghost",
+            "selected": "true"
+          },
+          {
+            "mode": "video",
+            "selected": "true"
+          }
+        ]
+      },
+      {
+        "name": "Use-case links support keyboard Enter and retain visible focus",
+        "status": "PASS",
+        "details": null
+      },
+      {
+        "name": "Modified use-case clicks keep native navigation semantics",
+        "status": "PASS",
+        "details": [
+          {
+            "modifier": "ctrlKey",
+            "preventedByApp": false,
+            "selected": "tab-live"
+          },
+          {
+            "modifier": "metaKey",
+            "preventedByApp": false,
+            "selected": "tab-live"
+          },
+          {
+            "modifier": "shiftKey",
+            "preventedByApp": false,
+            "selected": "tab-live"
+          },
+          {
+            "modifier": "altKey",
+            "preventedByApp": false,
+            "selected": "tab-live"
+          }
+        ]
+      },
+      {
+        "name": "1440px: CSS consolidation preserves typography and page layout",
+        "status": "PASS",
+        "details": {
+          "description": {
+            "fontSize": "16px",
+            "lineHeight": "29.6px",
+            "maxWidth": "310px",
+            "color": "rgb(105, 112, 125)",
+            "marginTop": "17px"
+          },
+          "layout": {
+            "width": 1440,
+            "document": 1440,
+            "links": [
+              {
+                "width": 440,
+                "height": 24,
+                "font": "12px",
+                "display": "flex"
+              },
+              {
+                "width": 440,
+                "height": 24,
+                "font": "12px",
+                "display": "flex"
+              },
+              {
+                "width": 440,
+                "height": 24,
+                "font": "12px",
+                "display": "flex"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "name": "1024px: CSS consolidation preserves typography and page layout",
+        "status": "PASS",
+        "details": {
+          "description": {
+            "fontSize": "14px",
+            "lineHeight": "25.9px",
+            "maxWidth": "310px",
+            "color": "rgb(105, 112, 125)",
+            "marginTop": "17px"
+          },
+          "layout": {
+            "width": 1024,
+            "document": 1024,
+            "links": [
+              {
+                "width": 440,
+                "height": 24,
+                "font": "12px",
+                "display": "flex"
+              },
+              {
+                "width": 440,
+                "height": 24,
+                "font": "12px",
+                "display": "flex"
+              },
+              {
+                "width": 440,
+                "height": 24,
+                "font": "12px",
+                "display": "flex"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "name": "768px: CSS consolidation preserves typography and page layout",
+        "status": "PASS",
+        "details": {
+          "description": {
+            "fontSize": "13px",
+            "lineHeight": "24.05px",
+            "maxWidth": "310px",
+            "color": "rgb(105, 112, 125)",
+            "marginTop": "17px"
+          },
+          "layout": {
+            "width": 768,
+            "document": 768,
+            "links": [
+              {
+                "width": 325,
+                "height": 24,
+                "font": "12px",
+                "display": "flex"
+              },
+              {
+                "width": 325,
+                "height": 24,
+                "font": "12px",
+                "display": "flex"
+              },
+              {
+                "width": 325,
+                "height": 24,
+                "font": "12px",
+                "display": "flex"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "name": "390px: CSS consolidation preserves typography and page layout",
+        "status": "PASS",
+        "details": {
+          "description": {
+            "fontSize": "15px",
+            "lineHeight": "27.75px",
+            "maxWidth": "none",
+            "color": "rgb(105, 112, 125)",
+            "marginTop": "13px"
+          },
+          "layout": {
+            "width": 390,
+            "document": 390,
+            "links": [
+              {
+                "width": 354,
+                "height": 24,
+                "font": "12px",
+                "display": "flex"
+              },
+              {
+                "width": 354,
+                "height": 24,
+                "font": "12px",
+                "display": "flex"
+              },
+              {
+                "width": 354,
+                "height": 24,
+                "font": "12px",
+                "display": "flex"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "name": "320px: CSS consolidation preserves typography and page layout",
+        "status": "PASS",
+        "details": {
+          "description": {
+            "fontSize": "15px",
+            "lineHeight": "27.75px",
+            "maxWidth": "none",
+            "color": "rgb(105, 112, 125)",
+            "marginTop": "13px"
+          },
+          "layout": {
+            "width": 320,
+            "document": 320,
+            "links": [
+              {
+                "width": 284,
+                "height": 24,
+                "font": "12px",
+                "display": "flex"
+              },
+              {
+                "width": 284,
+                "height": 24,
+                "font": "12px",
+                "display": "flex"
+              },
+              {
+                "width": 284,
+                "height": 24,
+                "font": "12px",
+                "display": "flex"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "name": "Deployment metadata uses absolute and consistent public URLs",
+        "status": "PASS",
+        "details": {
+          "canonical": "https://vclarity.vercel.app/",
+          "canonicalRaw": "https://vclarity.vercel.app/",
+          "ogUrl": "https://vclarity.vercel.app/",
+          "ogImage": "https://vclarity.vercel.app/assets/social-preview.png",
+          "twitterImage": "https://vclarity.vercel.app/assets/social-preview.png"
+        }
+      },
+      {
+        "name": "Navigating to the setup guide and back never restores a locked document",
+        "status": "PASS",
+        "details": {
+          "guideUrl": "http://127.0.0.1:4173/docs/preview-guide.html",
+          "restored": {
+            "visible": true,
+            "inert": false,
+            "rootOverflow": "visible",
+            "bodyOverflow": "visible"
+          },
+          "scrollBefore": 1000,
+          "scrollAfter": 1500
+        }
+      },
+      {
+        "name": "No console, page or resource failures",
+        "status": "PASS",
+        "details": {
+          "console": [],
+          "page": [],
+          "requests": []
+        }
+      }
+    ],
+    "browserErrors": {
+      "console": [],
+      "page": [],
+      "requests": []
+    },
+    "screenshots": "qa/screenshots/p2-*.png"
+  },
+  "p1": {
+    "passed": 17,
+    "failed": 0,
+    "results": [
+      {
+        "name": "Initial Live result passes pointers through before any tab is clicked",
+        "status": "PASS",
+        "details": {
+          "pointerEvents": "none"
+        }
+      },
+      {
+        "name": "Custom focus-visible CSS parses and applies to buttons, links, tabs and FAQ",
+        "status": "PASS",
+        "details": [
+          {
+            "selector": ".hero-actions [data-open-preview]",
+            "focusVisible": true,
+            "width": "3px",
+            "style": "solid",
+            "color": "rgb(54, 92, 245)"
+          },
+          {
+            "selector": ".hero-actions [data-watch-demo]",
+            "focusVisible": true,
+            "width": "3px",
+            "style": "solid",
+            "color": "rgb(54, 92, 245)"
+          },
+          {
+            "selector": "#tab-live",
+            "focusVisible": true,
+            "width": "3px",
+            "style": "solid",
+            "color": "rgb(54, 92, 245)"
+          },
+          {
+            "selector": ".faq-list summary",
+            "focusVisible": true,
+            "width": "3px",
+            "style": "solid",
+            "color": "rgb(54, 92, 245)"
+          }
+        ]
+      },
+      {
+        "name": "Mobile menu keyboard opening enters its links in forward order",
+        "status": "PASS",
+        "details": null
+      },
+      {
+        "name": "1440px: unblocked Live target, readable controls, no overflow or clipping",
+        "status": "PASS",
+        "details": {
+          "viewport": 1440,
+          "document": 1440,
+          "card": {
+            "receivesCenter": true,
+            "topmost": "workspace-project project-cream",
+            "font": "16px",
+            "dimensions": "282 × 128"
+          },
+          "fonts": [
+            {
+              "selector": ".feature-tabs>button>span:not(.shortcut):not(.new-label)",
+              "text": "Live InspectDetails you can measure.",
+              "font": 12
+            },
+            {
+              "selector": ".feature-tabs>button>span:not(.shortcut):not(.new-label)",
+              "text": "Ghost InspectThe bigger picture, understood.",
+              "font": 12
+            },
+            {
+              "selector": ".feature-tabs>button>span:not(.shortcut):not(.new-label)",
+              "text": "Video CaptureSee how an interface behaves.",
+              "font": 12
+            },
+            {
+              "selector": ".record-mode-tabs button",
+              "text": "Hold region",
+              "font": 12
+            },
+            {
+              "selector": ".record-mode-tabs button",
+              "text": "Record tab",
+              "font": 12
+            },
+            {
+              "selector": "#record-help",
+              "text": "Hold the button, Space, or Enter; release to ",
+              "font": 12
+            },
+            {
+              "selector": "#record-timer",
+              "text": "00:00 / 00:30",
+              "font": 12
+            },
+            {
+              "selector": "#record-timer>span",
+              "text": "/ 00:30",
+              "font": 12
+            },
+            {
+              "selector": "#record-button",
+              "text": "Hold to try",
+              "font": 12
+            },
+            {
+              "selector": "#record-toggle",
+              "text": "Start demo",
+              "font": 12
+            },
+            {
+              "selector": ".code-toolbar button",
+              "text": "index.html",
+              "font": 12
+            },
+            {
+              "selector": ".code-toolbar button",
+              "text": "styles.css",
+              "font": 12
+            },
+            {
+              "selector": ".code-toolbar button",
+              "text": "script.js",
+              "font": 12
+            },
+            {
+              "selector": "#copy-code",
+              "text": "Copy",
+              "font": 12
+            },
+            {
+              "selector": "#download-code",
+              "text": "Download",
+              "font": 12
+            },
+            {
+              "selector": "#replay-analysis",
+              "text": "Replay example workflow",
+              "font": 12
+            },
+            {
+              "selector": ".ai-note",
+              "text": "In Vclarity, analysis starts after you grant ",
+              "font": 12
+            }
+          ],
+          "ghostReplay": {
+            "font": 12,
+            "height": 36
+          }
+        }
+      },
+      {
+        "name": "1024px: unblocked Live target, readable controls, no overflow or clipping",
+        "status": "PASS",
+        "details": {
+          "viewport": 1024,
+          "document": 1024,
+          "card": {
+            "receivesCenter": true,
+            "topmost": "workspace-project project-cream",
+            "font": "16px",
+            "dimensions": "242 × 128"
+          },
+          "fonts": [
+            {
+              "selector": ".feature-tabs>button>span:not(.shortcut):not(.new-label)",
+              "text": "Live InspectDetails you can measure.",
+              "font": 12
+            },
+            {
+              "selector": ".feature-tabs>button>span:not(.shortcut):not(.new-label)",
+              "text": "Ghost InspectThe bigger picture, understood.",
+              "font": 12
+            },
+            {
+              "selector": ".feature-tabs>button>span:not(.shortcut):not(.new-label)",
+              "text": "Video CaptureSee how an interface behaves.",
+              "font": 12
+            },
+            {
+              "selector": ".record-mode-tabs button",
+              "text": "Hold region",
+              "font": 12
+            },
+            {
+              "selector": ".record-mode-tabs button",
+              "text": "Record tab",
+              "font": 12
+            },
+            {
+              "selector": "#record-help",
+              "text": "Hold the button, Space, or Enter; release to ",
+              "font": 12
+            },
+            {
+              "selector": "#record-timer",
+              "text": "00:00 / 00:30",
+              "font": 12
+            },
+            {
+              "selector": "#record-timer>span",
+              "text": "/ 00:30",
+              "font": 12
+            },
+            {
+              "selector": "#record-button",
+              "text": "Hold to try",
+              "font": 12
+            },
+            {
+              "selector": "#record-toggle",
+              "text": "Start demo",
+              "font": 12
+            },
+            {
+              "selector": ".code-toolbar button",
+              "text": "index.html",
+              "font": 12
+            },
+            {
+              "selector": ".code-toolbar button",
+              "text": "styles.css",
+              "font": 12
+            },
+            {
+              "selector": ".code-toolbar button",
+              "text": "script.js",
+              "font": 12
+            },
+            {
+              "selector": "#copy-code",
+              "text": "Copy",
+              "font": 12
+            },
+            {
+              "selector": "#download-code",
+              "text": "Download",
+              "font": 12
+            },
+            {
+              "selector": "#replay-analysis",
+              "text": "Replay example workflow",
+              "font": 12
+            },
+            {
+              "selector": ".ai-note",
+              "text": "In Vclarity, analysis starts after you grant ",
+              "font": 12
+            }
+          ],
+          "ghostReplay": {
+            "font": 12,
+            "height": 36
+          }
+        }
+      },
+      {
+        "name": "768px: unblocked Live target, readable controls, no overflow or clipping",
+        "status": "PASS",
+        "details": {
+          "viewport": 768,
+          "document": 768,
+          "card": {
+            "receivesCenter": true,
+            "topmost": "",
+            "font": "16px",
+            "dimensions": "182 × 111"
+          },
+          "fonts": [
+            {
+              "selector": ".feature-tabs>button>span:not(.shortcut):not(.new-label)",
+              "text": "Live InspectDetails you can measure.",
+              "font": 12
+            },
+            {
+              "selector": ".feature-tabs>button>span:not(.shortcut):not(.new-label)",
+              "text": "Ghost InspectThe bigger picture, understood.",
+              "font": 12
+            },
+            {
+              "selector": ".feature-tabs>button>span:not(.shortcut):not(.new-label)",
+              "text": "Video CaptureSee how an interface behaves.",
+              "font": 12
+            },
+            {
+              "selector": ".record-mode-tabs button",
+              "text": "Hold region",
+              "font": 12
+            },
+            {
+              "selector": ".record-mode-tabs button",
+              "text": "Record tab",
+              "font": 12
+            },
+            {
+              "selector": "#record-help",
+              "text": "Hold the button, Space, or Enter; release to ",
+              "font": 12
+            },
+            {
+              "selector": "#record-timer",
+              "text": "00:00 / 00:30",
+              "font": 12
+            },
+            {
+              "selector": "#record-timer>span",
+              "text": "/ 00:30",
+              "font": 12
+            },
+            {
+              "selector": "#record-button",
+              "text": "Hold to try",
+              "font": 12
+            },
+            {
+              "selector": "#record-toggle",
+              "text": "Start demo",
+              "font": 12
+            },
+            {
+              "selector": ".code-toolbar button",
+              "text": "index.html",
+              "font": 12
+            },
+            {
+              "selector": ".code-toolbar button",
+              "text": "styles.css",
+              "font": 12
+            },
+            {
+              "selector": ".code-toolbar button",
+              "text": "script.js",
+              "font": 12
+            },
+            {
+              "selector": "#copy-code",
+              "text": "Copy",
+              "font": 12
+            },
+            {
+              "selector": "#download-code",
+              "text": "Download",
+              "font": 12
+            },
+            {
+              "selector": "#replay-analysis",
+              "text": "Replay example workflow",
+              "font": 12
+            },
+            {
+              "selector": ".ai-note",
+              "text": "In Vclarity, analysis starts after you grant ",
+              "font": 12
+            }
+          ],
+          "ghostReplay": {
+            "font": 12,
+            "height": 36
+          }
+        }
+      },
+      {
+        "name": "390px: unblocked Live target, readable controls, no overflow or clipping",
+        "status": "PASS",
+        "details": {
+          "viewport": 390,
+          "document": 390,
+          "card": {
+            "receivesCenter": true,
+            "topmost": "",
+            "font": "16px",
+            "dimensions": "137 × 111"
+          },
+          "fonts": [
+            {
+              "selector": ".feature-tabs>button>span:not(.shortcut):not(.new-label)",
+              "text": "Live InspectDetails you can measure.",
+              "font": 12
+            },
+            {
+              "selector": ".feature-tabs>button>span:not(.shortcut):not(.new-label)",
+              "text": "Ghost InspectThe bigger picture, understood.",
+              "font": 12
+            },
+            {
+              "selector": ".feature-tabs>button>span:not(.shortcut):not(.new-label)",
+              "text": "Video CaptureSee how an interface behaves.",
+              "font": 12
+            },
+            {
+              "selector": ".record-mode-tabs button",
+              "text": "Hold region",
+              "font": 12
+            },
+            {
+              "selector": ".record-mode-tabs button",
+              "text": "Record tab",
+              "font": 12
+            },
+            {
+              "selector": "#record-help",
+              "text": "Hold the button, Space, or Enter; release to ",
+              "font": 12
+            },
+            {
+              "selector": "#record-timer",
+              "text": "00:00 / 00:30",
+              "font": 12
+            },
+            {
+              "selector": "#record-timer>span",
+              "text": "/ 00:30",
+              "font": 12
+            },
+            {
+              "selector": "#record-button",
+              "text": "Hold to try",
+              "font": 12
+            },
+            {
+              "selector": "#record-toggle",
+              "text": "Start demo",
+              "font": 12
+            },
+            {
+              "selector": ".code-toolbar button",
+              "text": "index.html",
+              "font": 12
+            },
+            {
+              "selector": ".code-toolbar button",
+              "text": "styles.css",
+              "font": 12
+            },
+            {
+              "selector": ".code-toolbar button",
+              "text": "script.js",
+              "font": 12
+            },
+            {
+              "selector": "#copy-code",
+              "text": "Copy",
+              "font": 12
+            },
+            {
+              "selector": "#download-code",
+              "text": "Download",
+              "font": 12
+            },
+            {
+              "selector": "#replay-analysis",
+              "text": "Replay example workflow",
+              "font": 12
+            },
+            {
+              "selector": ".ai-note",
+              "text": "In Vclarity, analysis starts after you grant ",
+              "font": 12
+            }
+          ],
+          "ghostReplay": {
+            "font": 12,
+            "height": 36
+          }
+        }
+      },
+      {
+        "name": "320px: unblocked Live target, readable controls, no overflow or clipping",
+        "status": "PASS",
+        "details": {
+          "viewport": 320,
+          "document": 320,
+          "card": {
+            "receivesCenter": true,
+            "topmost": "",
+            "font": "16px",
+            "dimensions": "102 × 111"
+          },
+          "fonts": [
+            {
+              "selector": ".feature-tabs>button>span:not(.shortcut):not(.new-label)",
+              "text": "Live InspectDetails you can measure.",
+              "font": 12
+            },
+            {
+              "selector": ".feature-tabs>button>span:not(.shortcut):not(.new-label)",
+              "text": "Ghost InspectThe bigger picture, understood.",
+              "font": 12
+            },
+            {
+              "selector": ".feature-tabs>button>span:not(.shortcut):not(.new-label)",
+              "text": "Video CaptureSee how an interface behaves.",
+              "font": 12
+            },
+            {
+              "selector": ".record-mode-tabs button",
+              "text": "Hold region",
+              "font": 12
+            },
+            {
+              "selector": ".record-mode-tabs button",
+              "text": "Record tab",
+              "font": 12
+            },
+            {
+              "selector": "#record-help",
+              "text": "Hold the button, Space, or Enter; release to ",
+              "font": 12
+            },
+            {
+              "selector": "#record-timer",
+              "text": "00:00 / 00:30",
+              "font": 12
+            },
+            {
+              "selector": "#record-timer>span",
+              "text": "/ 00:30",
+              "font": 12
+            },
+            {
+              "selector": "#record-button",
+              "text": "Hold to try",
+              "font": 12
+            },
+            {
+              "selector": "#record-toggle",
+              "text": "Start demo",
+              "font": 12
+            },
+            {
+              "selector": ".code-toolbar button",
+              "text": "index.html",
+              "font": 12
+            },
+            {
+              "selector": ".code-toolbar button",
+              "text": "styles.css",
+              "font": 12
+            },
+            {
+              "selector": ".code-toolbar button",
+              "text": "script.js",
+              "font": 12
+            },
+            {
+              "selector": "#copy-code",
+              "text": "Copy",
+              "font": 12
+            },
+            {
+              "selector": "#download-code",
+              "text": "Download",
+              "font": 12
+            },
+            {
+              "selector": "#replay-analysis",
+              "text": "Replay example workflow",
+              "font": 12
+            },
+            {
+              "selector": ".ai-note",
+              "text": "In Vclarity, analysis starts after you grant ",
+              "font": 12
+            }
+          ],
+          "ghostReplay": {
+            "font": 12,
+            "height": 36
+          }
+        }
+      },
+      {
+        "name": "Timer denominator meets normal-text contrast",
+        "status": "PASS",
+        "details": {
+          "foreground": "rgb(172, 184, 207)",
+          "background": "rgb(24, 36, 58)",
+          "ratio": 7.7730038267676305
+        }
+      },
+      {
+        "name": "Region Start/Stop alternative supports synthesized clicks and normal keyboard activation",
+        "status": "PASS",
+        "details": null
+      },
+      {
+        "name": "Existing pointer/Space/Enter hold gestures stop once, with no click restart",
+        "status": "PASS",
+        "details": null
+      },
+      {
+        "name": "Rapid Space/Enter hold retries survive the previous minimum-duration stop",
+        "status": "PASS",
+        "details": {
+          "keys": [
+            "Space",
+            "Enter"
+          ],
+          "retryGapMilliseconds": 20,
+          "sustainedRetryMilliseconds": 150
+        }
+      },
+      {
+        "name": "Mode changes reset fallback state; tab Start/Stop still works",
+        "status": "PASS",
+        "details": null
+      },
+      {
+        "name": "All recording entry points stop automatically at 30 seconds",
+        "status": "PASS",
+        "details": {
+          "entryPoints": [
+            "hold",
+            "region-toggle",
+            "tab"
+          ],
+          "acceleratedClock": true
+        }
+      },
+      {
+        "name": "Reduced motion preserves fallback interaction without animation",
+        "status": "PASS",
+        "details": {
+          "row": "none",
+          "indicator": "none",
+          "scroll": "auto"
+        }
+      },
+      {
+        "name": "Preview prerequisites are explicit before the download action",
+        "status": "PASS",
+        "details": {
+          "beforeDownload": "  Vclarity 0.2.0 A clearer view starts here. Vclarity is currently a developer preview. Install the unpacked extension in desktop Chrome. Live Inspect and local Ghost palette extraction work immediately. AI analysis and Motion & code, including recording, require a separately configured Vclarity API, a compatible AI provider, and consent to send captures. Download and extract the extension ZIP.Open chrome://extensions and enable Developer mode.Choose Load unpacked and select the extracted folder."
+        }
+      },
+      {
+        "name": "No console, page or resource failures",
+        "status": "PASS",
+        "details": {
+          "console": [],
+          "page": [],
+          "requests": []
+        }
+      }
+    ],
+    "browserErrors": {
+      "console": [],
+      "page": [],
+      "requests": []
+    },
+    "screenshots": "qa/screenshots/p1-*.png"
+  },
+  "regression": {
+    "passed": 20,
+    "failed": 0,
+    "results": [
+      {
+        "name": "Page loads with Inter, metadata and semantic main",
+        "status": "PASS",
+        "details": {
+          "title": "Vclarity 0.2.0 — See beyond the pixels.",
+          "description": "Vclarity 0.2.0 is a Chrome extension for exact DOM inspection, AI-assisted visual analysis, and capturing website interactions to generate frontend code.",
+          "font": true,
+          "loadedInter": true,
+          "h1": 1,
+          "main": 1,
+          "skip": "#main",
+          "images": []
+        }
+      },
+      {
+        "name": "Desktop navigation anchors scroll to their destinations",
+        "status": "PASS",
+        "details": [
+          {
+            "id": "features",
+            "top": 56
+          },
+          {
+            "id": "how-it-works",
+            "top": 56
+          },
+          {
+            "id": "faq",
+            "top": 56
+          }
+        ]
+      },
+      {
+        "name": "Developer preview modal supports Escape and focus restoration",
+        "status": "PASS",
+        "details": null
+      },
+      {
+        "name": "Preview archive is a valid downloadable ZIP; guide is available",
+        "status": "PASS",
+        "details": {
+          "bytes": 191022,
+          "mime": "application/zip"
+        }
+      },
+      {
+        "name": "Live Inspect displays actual computed values and copies CSS",
+        "status": "PASS",
+        "details": {
+          "fontSize": "16px",
+          "width": 282,
+          "height": 128
+        }
+      },
+      {
+        "name": "Feature tabs support arrows, Home/End and honest Ghost output",
+        "status": "PASS",
+        "details": null
+      },
+      {
+        "name": "Code tabs, clipboard and ZIP export work",
+        "status": "PASS",
+        "details": {
+          "clipboardCharacters": 969,
+          "downloadBytes": 2788
+        }
+      },
+      {
+        "name": "Illustrative workflow reaches completed output",
+        "status": "PASS",
+        "details": null
+      },
+      {
+        "name": "Hold Region pointer press records; release stops",
+        "status": "PASS",
+        "details": null
+      },
+      {
+        "name": "Hold Region supports Space and Enter release controls",
+        "status": "PASS",
+        "details": null
+      },
+      {
+        "name": "Record Tab toggles Start/Stop and mode change resets capture",
+        "status": "PASS",
+        "details": null
+      },
+      {
+        "name": "Both recording modes stop automatically at 30 seconds",
+        "status": "PASS",
+        "details": {
+          "acceleratedClock": true
+        }
+      },
+      {
+        "name": "Reduced motion disables recording animation and reveals content",
+        "status": "PASS",
+        "details": {
+          "media": true,
+          "rowAnimation": "none",
+          "indicatorAnimation": "none",
+          "smoothScroll": "auto",
+          "hiddenReveals": 0
+        }
+      },
+      {
+        "name": "Mobile navigation is keyboard accessible and closes on Escape/selection",
+        "status": "PASS",
+        "details": null
+      },
+      {
+        "name": "1440px responsive layout and screenshots",
+        "status": "PASS",
+        "details": {
+          "viewport": 1440,
+          "document": 1440,
+          "body": 1440,
+          "overflowing": []
+        }
+      },
+      {
+        "name": "768px responsive layout and screenshots",
+        "status": "PASS",
+        "details": {
+          "viewport": 768,
+          "document": 768,
+          "body": 768,
+          "overflowing": []
+        }
+      },
+      {
+        "name": "390px responsive layout and screenshots",
+        "status": "PASS",
+        "details": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390,
+          "overflowing": []
+        }
+      },
+      {
+        "name": "320px responsive layout and screenshots",
+        "status": "PASS",
+        "details": {
+          "viewport": 320,
+          "document": 320,
+          "body": 320,
+          "overflowing": []
+        }
+      },
+      {
+        "name": "FAQ opens with keyboard and exposes the answer",
+        "status": "PASS",
+        "details": null
+      },
+      {
+        "name": "No unexpected console, page or network failures",
+        "status": "PASS",
+        "details": {
+          "console": [],
+          "page": [],
+          "requests": []
+        }
+      }
+    ],
+    "browserErrors": {
+      "console": [],
+      "page": [],
+      "requests": []
+    },
+    "screenshots": "qa/screenshots/",
+    "downloads": "qa/vclarity-motion-example.zip"
+  }
+}
